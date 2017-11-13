@@ -15,8 +15,7 @@
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-      <i class="fa fa-search" aria-hidden="true"></i>
-<i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+    
 
 				<?php get_template_part( 'template-parts/content' ); ?>
 

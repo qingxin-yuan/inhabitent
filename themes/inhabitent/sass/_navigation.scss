@@ -98,15 +98,30 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: inline;
 }
+
+.main-navigation{
+	display: flex;
+	justify-content: space-between;
+	img{
+		height: 24px;
+	}
+	.main-menu{
+		display: flex;
+		flex-direction: row;
+		width: 200px;
+	}
+	
+}
+
 
 @media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: inline;
 	}
 }
 
