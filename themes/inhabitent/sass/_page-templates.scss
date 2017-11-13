@@ -4,14 +4,17 @@
 
 /* Front page */
 
-
+body{
+  font-family: $font__main;
+}
 // FOOTER
 footer{
   color: white;
   .site-info{
     display: flex;
     h3{
-        text-transform: uppercase;
+      font-family: $font__uppercase;
+      text-transform: uppercase;
       }
     .contact-info,.business-hours{
       width: 300px;

@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+@import "variables";
 
 /* Links */
 
@@ -114,6 +115,7 @@ a {
 		display: flex;
 		flex-direction: row;
 		width: 350px;
+		font-family: $font__uppercase;
 		text-transform: uppercase;
 		ul li{
 			padding: 0 10px;
