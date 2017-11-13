@@ -688,3 +688,28 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+footer {
+  color: white; }
+  footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .site-info h3 {
+      text-transform: uppercase; }
+    footer .site-info .contact-info, footer .site-info .business-hours {
+      width: 300px;
+      padding: 7px; }
+    footer .site-info .contact-info a {
+      text-decoration: none;
+      color: white; }
+    footer .site-info .contact-info i {
+      padding: 0 7px;
+      font-size: 1.5rem; }
+    footer .site-info .business-hours .text-bold {
+      font-weight: bold; }
+    footer .site-info .footer-image {
+      padding: 50px;
+      width: 400px; }
+      footer .site-info .footer-image a {
+        text-decoration: none;
+        color: white; }
