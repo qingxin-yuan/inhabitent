@@ -491,7 +491,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 60px;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #e4e4e4;
   background: rgba(255, 255, 255, 0.8);
   z-index: 3; }
   .main-navigation img {
@@ -723,7 +723,7 @@ object {
 #secondary {
   width: auto;
   padding: 50px 50px;
-  border-left: 1px solid #a1a1a1; }
+  border-left: 1px solid #e4e4e4; }
   #secondary a {
     text-decoration: none;
     color: #248A83; }
