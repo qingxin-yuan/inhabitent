@@ -105,9 +105,15 @@ a {
 
 // customization
 .main-navigation{
+	position: fixed;
+	top: 30px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 60px;
+	padding: 10px 60px;
+	border-bottom: 1px solid #a1a1a1;
+	background: rgba(255,255,255, 0.8);
+	z-index:3;
 	img{
 		height: 24px;
 	}

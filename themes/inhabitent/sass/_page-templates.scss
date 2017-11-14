@@ -8,16 +8,20 @@
 .blog,.error404,.page-id-25{
   .site-content{
     display: flex;
+    margin-top: 48px;
   }
 }
 #primary{
   width: 75%;
-  padding: 0 150px;
+  padding: 50px 80px;
 }
 #secondary{
   width: auto;
+  padding: 50px 50px;
+  border-left: 1px solid #a1a1a1;
   a{
       text-decoration: none;
+      
       color: #248A83;
     }
     i{
@@ -25,20 +29,30 @@
       padding: 0 5px;
       // color: black;
     }
-  aside ul{
+  aside {
+    .widget-title{
+      text-transform: uppercase;
+      font-family: "no";
+    }
+    ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
+  }
+    
 }
 //journal page
 .blog{
   .site-content{
-    padding: 50px 0;
+    
     article .entry-header{
     
     position: relative;
     text-transform: uppercase;
+    img{
+      width: 100%;
+    }
     .entry-title{
       position: absolute;
       top: 10px;
@@ -74,14 +88,15 @@ footer{
   color: white;
   .site-info{
     display: flex;
+    padding: 0 150px;
     h3{
       font-family: $font__uppercase;
       text-transform: uppercase;
       color: $text-color_orange;
       }
     .contact-info,.business-hours{
-      width: 300px;
-      padding: 7px;
+      width: 20vw;
+      padding: 10px 20px;
     }
     .contact-info{
       a{
@@ -99,8 +114,8 @@ footer{
       }
     }
     .footer-image{
-      padding: 50px;
-      width: 400px;
+      padding: 50px 0 50px 200px;
+      width: auto;
       a{
         text-decoration: none;
         color: white;
