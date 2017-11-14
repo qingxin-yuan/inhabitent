@@ -704,6 +704,28 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.blog .site-content, .error404 .site-content, .page-id-25 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#primary {
+  width: 75%;
+  padding: 0 150px; }
+
+#secondary {
+  width: auto; }
+  #secondary a {
+    text-decoration: none;
+    color: #248A83; }
+  #secondary i {
+    min-width: 35px;
+    padding: 0 5px; }
+  #secondary aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
 body {
   font-family: "Merriweather", serif; }
 
@@ -715,7 +737,8 @@ footer {
     display: flex; }
     footer .site-info h3 {
       font-family: "no", sans-serif;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #d99054; }
     footer .site-info .contact-info, footer .site-info .business-hours {
       width: 300px;
       padding: 7px; }
@@ -733,3 +756,8 @@ footer {
       footer .site-info .footer-image a {
         text-decoration: none;
         color: white; }
+  footer .footer-copyright {
+    font-family: "no",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px; }

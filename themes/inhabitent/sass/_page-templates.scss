@@ -1,8 +1,38 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
+@import 'variables';
 /* Front page */
+
+// sidebar
+.blog,.error404,.page-id-25{
+  .site-content{
+    display: flex;
+  }
+}
+#primary{
+  width: 75%;
+  padding: 0 150px;
+}
+#secondary{
+  width: auto;
+  a{
+      text-decoration: none;
+      color: #248A83;
+    }
+    i{
+      min-width: 35px;
+      padding: 0 5px;
+      // color: black;
+    }
+  aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
 
 body{
   font-family: $font__main;
@@ -15,6 +45,7 @@ footer{
     h3{
       font-family: $font__uppercase;
       text-transform: uppercase;
+      color: $text-color_orange;
       }
     .contact-info,.business-hours{
       width: 300px;
@@ -44,5 +75,11 @@ footer{
       }
     }
     
+  }
+  .footer-copyright{
+    font-family: "no",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
   }
 }
