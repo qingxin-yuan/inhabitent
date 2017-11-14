@@ -31,7 +31,39 @@
     padding: 0;
   }
 }
-
+//journal page
+.blog{
+  .site-content{
+    padding: 50px 0;
+    article .entry-header{
+    
+    position: relative;
+    text-transform: uppercase;
+    .entry-title{
+      position: absolute;
+      top: 10px;
+      left:0;
+      max-width: 80%;
+      background: #248A83;
+      padding: 10px;
+      a{
+        text-decoration: none;
+        font-family: "no";
+        color: white;
+        width: 100%;
+      } 
+    }
+    .entry-meta{
+      position: absolute;
+      bottom: 6px;
+      right: 0;
+      color: white;
+      background: #248A83;
+      padding: 5px;
+    }
+  } 
+  } 
+}
 
 
 body{
