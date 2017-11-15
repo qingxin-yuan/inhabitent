@@ -32,6 +32,51 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.home .site-main ul{
+	list-style-type: none;
+	display: flex;
+	li{
+		width: 30%;
+		max-height: 500px;
+		
+		padding-bottom: 10px;
+		margin: 0 15px;
+		border: solid #a1a1a1 1px;
+
+		.home-image-wrapper{
+			height: 60%;
+			padding: 0;
+			img{
+				height: 100%;
+			}
+		}
+		.home-journal-info-wrapper{
+			height: 40%;
+			padding: 15px;
+			border-top: solid #a1a1a1 5px;
+			display:flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		h2{
+			color: #248A83;
+			font-family: "no", sans-serif;
+			// padding: 5px 0;
+		}
+		a{
+			text-decoration: none;
+			font-family: "no", sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			color: black;
+			border: solid black 1px;
+			padding: 5px;
+			width: 150px;
+		}
+	}
+}
+
+
 /* Asides */
 
 .blog .format-aside .entry-title,
