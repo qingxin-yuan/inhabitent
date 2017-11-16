@@ -14,7 +14,14 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<!-- <?php the_post_navigation(); ?> -->
+
+			<div class="single-post-social-media">
+				<span><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>like</a></span>
+				<span><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>tweet</a></span>
+				<span><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i>pin</a></span>
+			</div>
+
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
