@@ -32,7 +32,14 @@
 	margin: 0 0 $base__space-unit;
 }
 // front page journal styling
-.home .site-main ul{
+.home .site-main{
+	article .entry-header{
+		display: none;
+	}
+	.home-journal-posts h1{
+			text-align: center;
+	}
+	ul{
 	list-style-type: none;
 	display: flex;
 	li{
@@ -75,6 +82,31 @@
 		}
 	}
 }
+.product-info-container{
+	h2{
+		text-align: center;
+	}
+	.product-type-blocks{
+		display:flex;
+		justify-content: space-between;
+		padding: 5vw 10vw;
+	}
+	.product-type-block-wrapper{
+		margin: 0 20px;
+		padding: 10px 30px;
+		text-align: center;
+		border: 2px solid #f0e4d1;
+		a{
+			text-decoration: none;
+			color: white;
+			background: #248A83;
+			margin: 10px;
+		}
+	}
+}
+
+
+} 
 // each journal page styling
 
 

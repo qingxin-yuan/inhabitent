@@ -689,6 +689,12 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.home .site-main article .entry-header {
+  display: none; }
+
+.home .site-main .home-journal-posts h1 {
+  text-align: center; }
+
 .home .site-main ul {
   list-style-type: none;
   display: -webkit-box;
@@ -731,6 +737,29 @@ a {
       border: solid black 1px;
       padding: 5px;
       width: 150px; }
+
+.home .site-main .product-info-container h2 {
+  text-align: center; }
+
+.home .site-main .product-info-container .product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5vw 10vw; }
+
+.home .site-main .product-info-container .product-type-block-wrapper {
+  margin: 0 20px;
+  padding: 10px 30px;
+  text-align: center;
+  border: 2px solid #f0e4d1; }
+  .home .site-main .product-info-container .product-type-block-wrapper a {
+    text-decoration: none;
+    color: white;
+    background: #248A83;
+    margin: 10px; }
 
 /* Asides */
 .blog .format-aside .entry-title,

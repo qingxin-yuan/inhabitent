@@ -30,15 +30,14 @@
 
 		
 <!-- getting shop categories -->
-<section class="product-info container">
+<section class="product-info-container">
 	<h2>Shop Stuff</h2>
 	<?php
 			$terms = get_terms( array(
 					'taxonomy' => 'product-type',
 					'hide_empty' => 0,
 			) );
-			if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
-	?>
+			if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :?>
 			<div class="product-type-blocks">
 
 				<?php foreach ( $terms as $term ) : ?>
@@ -58,32 +57,28 @@
 
 
 
-
-
-
-
-
 <!-- generate journals on home page -->
-			<h1>Inhabitent Journal</h1>
-			<ul>
-			<?php
-				$args = array( 'posts_per_page'=>3 );
-				$posts = get_posts( $args ); // returns an array of posts
-			?>
-			<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-				<li>
-					<div class="home-image-wrapper">
-					<?php the_post_thumbnail('full');?>
-					</div>
-					<div class="home-journal-info-wrapper">
-						<p><?php the_date();?> / <?php comments_number();?></p>
-						<h2><?php the_title();  ?></h2>
-						<a href="<?php echo the_permalink();?>">read more</a>
-					</div>
-				</li>
-			<?php endforeach; wp_reset_postdata(); ?>
-		</ul>
-
+<section class="home-journal-posts">
+	<h1>Inhabitent Journal</h1>
+	<ul>
+	<?php
+		$args = array( 'posts_per_page'=>3 );
+		$posts = get_posts( $args ); // returns an array of posts
+	?>
+	<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+		<li>
+			<div class="home-image-wrapper">
+			<?php the_post_thumbnail('full');?>
+			</div>
+			<div class="home-journal-info-wrapper">
+				<p><?php the_date();?> / <?php comments_number();?></p>
+				<h2><?php the_title();  ?></h2>
+				<a href="<?php echo the_permalink();?>">read more</a>
+			</div>
+		</li>
+	<?php endforeach; wp_reset_postdata(); ?>
+	</ul>
+</section>
 
 
 		</main><!-- #main -->
