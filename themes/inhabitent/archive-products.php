@@ -14,8 +14,8 @@ get_header(); ?>
 
 <header class="page-header">
 <h1 class="products-archive-heading">shop stuff<h1>
-<?php 
 
+<?php 
 
 $terms = get_terms( array(
 		'taxonomy' => 'product-type',
@@ -24,7 +24,7 @@ $terms = get_terms( array(
 
 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :?>
 
-<ul class="products-archive-list">
+<ul class="products-archive-type-list">
 
 	<?php foreach ( $terms as $term ) : ?>
 
@@ -40,23 +40,24 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :?>
 
 </header><!-- .page-header -->
 
-<?php /* Start the Loop */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
 
-
-<header class="entry-header">
-<?php if ( has_post_thumbnail() ) : ?>
-<?php the_post_thumbnail( 'medium' ); ?>
-<?php endif; ?>
-</header>
-
-<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-echo CFS()->get('price');
-?>
-
-<?php endwhile; ?>
-
-<?php the_posts_navigation(); ?>
+<ul class="products-archive-list">
+	<?php
+		$args = array( 'post_type'=>'products','posts_per_page'=>16);
+		$posts = get_posts( $args ); // returns an array of posts
+	?>
+	<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+		<li>
+			<div class="products-archive-image-wrapper">
+			<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('medium');?></a>
+			</div>
+			<div class="products-archive-text-wrapper">
+				<span><?php the_title();?></span><span class="dots">
+				<?php echo CFS()->get('price');?></span>
+			</div>
+		</li>
+	<?php endforeach; wp_reset_postdata(); ?>
+</ul>
 
 <?php else : ?>
 

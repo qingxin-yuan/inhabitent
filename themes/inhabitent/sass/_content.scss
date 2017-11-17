@@ -31,7 +31,13 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
-// front page journal styling
+
+//CUSTOMIZATION
+#content{
+	margin-top: 50px;
+}
+
+// FRONT PAGE JOURNAL SECTION
 .home .site-main{
 	article .entry-header{
 		display: none;
@@ -68,7 +74,6 @@
 		h2{
 			color: #248A83;
 			font-family: "no", sans-serif;
-			// padding: 5px 0;
 		}
 		a{
 			text-decoration: none;
@@ -107,8 +112,89 @@
 
 
 } 
-// each journal page styling
+// EACH JOURNAL PAGE STYLING
 
+
+
+
+
+//SHOP PAGE STYLING
+.post-type-archive,.tax-product-type{
+	#main{
+		.page-header,.tax-custom-type-header{
+			font-family: "no", sans-serif;
+			margin: 2vw auto;
+			text-align: center;
+			.products-archive-type-list{
+				display: flex;
+				list-style-type: none;
+				justify-content: center;
+				
+				li{
+					width: 7%;
+					text-align: center;
+					font-size: 1.2rem;
+					text-transform: uppercase;
+					font-weight: normal;
+					a{
+						text-decoration: none;
+						color: #248A83;
+					}
+				}
+			}
+		}
+		.products-archive-list,.tax-custom-list{
+			display: flex;
+			flex-wrap: wrap;
+			margin:5vw 10vw;
+			list-style-type: none;
+			li{
+				flex-basis: 22%;
+				margin: 2vw 1vw;
+				.products-archive-image-wrapper,.tax-custom-image-wrapper{
+					height: 14vw;
+					img{
+						object-fit: cover;
+						height: 100%;
+					}
+				}
+				.products-archive-text-wrapper,.tax-custom-text-wrapper{
+					position: relative;
+					display: flex;
+					width: 100%;
+					overflow: hidden;
+					border: 1px solid #f0e4d1;
+					border-top: 5px solid #f0e4d1;;
+					padding: 10px;
+					z-index: 5;
+					// background: white;
+					span{
+						z-index: 5;
+						background: white;
+					}
+					.dots{
+						background: white;
+						flex-grow: 2;
+						text-align: right;
+						overflow: hidden;
+						// z-index: 5;
+						&::before{
+						// display:block;
+						z-index: -5;
+						position:absolute;
+						content:'...........................';
+						top: 5px;
+						width: 14px;
+						height: 14px;
+						left: 70px;
+					}
+					}
+					
+				}
+			}
+		}
+	}
+}
 
 
 /* Asides */

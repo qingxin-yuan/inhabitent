@@ -24,7 +24,6 @@ get_header();
         </div>
       </div>
 
-    
     </article>
 
   </main><!-- #main -->

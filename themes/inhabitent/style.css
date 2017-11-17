@@ -316,6 +316,10 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600; }
+
 /* Copy */
 dfn, cite, em, i {
   font-style: italic; }
@@ -384,9 +388,6 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
-  margin: 0 0 1.5rem 3rem; }
-
 ul {
   list-style: disc; }
 
@@ -426,13 +427,10 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type="button"]:hover,
@@ -470,16 +468,11 @@ textarea {
   textarea:focus {
     color: #111; }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
-
 textarea {
-  padding-left: 3px;
   width: 100%; }
+
+input {
+  padding: 0; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -537,8 +530,9 @@ a {
 
 .main-navigation {
   position: fixed;
-  top: 30px;
+  top: 0;
   width: 100%;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,13 +553,38 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 350px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30%;
     font-family: "no", sans-serif;
     text-transform: uppercase; }
-    .main-navigation .main-menu ul li {
-      padding: 0 10px; }
-      .main-navigation .main-menu ul li a {
-        color: #248A83; }
+    .main-navigation .main-menu .menu-main-menu-container {
+      width: 75%; }
+      .main-navigation .main-menu .menu-main-menu-container li {
+        padding: 0 0.5vw; }
+        .main-navigation .main-menu .menu-main-menu-container li a {
+          color: #248A83; }
+    .main-navigation .main-menu form fieldset {
+      width: 100%;
+      border: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative; }
+      .main-navigation .main-menu form fieldset button {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        background: none;
+        border: none;
+        width: 10px; }
+      .main-navigation .main-menu form fieldset label {
+        position: absolute;
+        top: -5px;
+        left: 30px; }
+        .main-navigation .main-menu form fieldset label input {
+          border: none; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -689,6 +708,9 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+#content {
+  margin-top: 50px; }
+
 .home .site-main article .entry-header {
   display: none; }
 
@@ -760,6 +782,76 @@ a {
     color: white;
     background: #248A83;
     margin: 10px; }
+
+.post-type-archive #main .page-header, .post-type-archive #main .tax-custom-type-header, .tax-product-type #main .page-header, .tax-product-type #main .tax-custom-type-header {
+  font-family: "no", sans-serif;
+  margin: 2vw auto;
+  text-align: center; }
+  .post-type-archive #main .page-header .products-archive-type-list, .post-type-archive #main .tax-custom-type-header .products-archive-type-list, .tax-product-type #main .page-header .products-archive-type-list, .tax-product-type #main .tax-custom-type-header .products-archive-type-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .post-type-archive #main .page-header .products-archive-type-list li, .post-type-archive #main .tax-custom-type-header .products-archive-type-list li, .tax-product-type #main .page-header .products-archive-type-list li, .tax-product-type #main .tax-custom-type-header .products-archive-type-list li {
+      width: 7%;
+      text-align: center;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: normal; }
+      .post-type-archive #main .page-header .products-archive-type-list li a, .post-type-archive #main .tax-custom-type-header .products-archive-type-list li a, .tax-product-type #main .page-header .products-archive-type-list li a, .tax-product-type #main .tax-custom-type-header .products-archive-type-list li a {
+        text-decoration: none;
+        color: #248A83; }
+
+.post-type-archive #main .products-archive-list, .post-type-archive #main .tax-custom-list, .tax-product-type #main .products-archive-list, .tax-product-type #main .tax-custom-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5vw 10vw;
+  list-style-type: none; }
+  .post-type-archive #main .products-archive-list li, .post-type-archive #main .tax-custom-list li, .tax-product-type #main .products-archive-list li, .tax-product-type #main .tax-custom-list li {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+    margin: 2vw 1vw; }
+    .post-type-archive #main .products-archive-list li .products-archive-image-wrapper, .post-type-archive #main .products-archive-list li .tax-custom-image-wrapper, .post-type-archive #main .tax-custom-list li .products-archive-image-wrapper, .post-type-archive #main .tax-custom-list li .tax-custom-image-wrapper, .tax-product-type #main .products-archive-list li .products-archive-image-wrapper, .tax-product-type #main .products-archive-list li .tax-custom-image-wrapper, .tax-product-type #main .tax-custom-list li .products-archive-image-wrapper, .tax-product-type #main .tax-custom-list li .tax-custom-image-wrapper {
+      height: 14vw; }
+      .post-type-archive #main .products-archive-list li .products-archive-image-wrapper img, .post-type-archive #main .products-archive-list li .tax-custom-image-wrapper img, .post-type-archive #main .tax-custom-list li .products-archive-image-wrapper img, .post-type-archive #main .tax-custom-list li .tax-custom-image-wrapper img, .tax-product-type #main .products-archive-list li .products-archive-image-wrapper img, .tax-product-type #main .products-archive-list li .tax-custom-image-wrapper img, .tax-product-type #main .tax-custom-list li .products-archive-image-wrapper img, .tax-product-type #main .tax-custom-list li .tax-custom-image-wrapper img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        height: 100%; }
+    .post-type-archive #main .products-archive-list li .products-archive-text-wrapper, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #f0e4d1;
+      border-top: 5px solid #f0e4d1;
+      padding: 10px;
+      z-index: 5; }
+      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span {
+        z-index: 5;
+        background: white; }
+      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper .dots, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper .dots, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper .dots, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper .dots, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper .dots, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper .dots, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper .dots, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper .dots {
+        background: white;
+        -webkit-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2;
+        text-align: right;
+        overflow: hidden; }
+        .post-type-archive #main .products-archive-list li .products-archive-text-wrapper .dots::before, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper .dots::before, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper .dots::before, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper .dots::before, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper .dots::before, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper .dots::before, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper .dots::before, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper .dots::before {
+          z-index: -5;
+          position: absolute;
+          content: '...........................';
+          top: 5px;
+          width: 14px;
+          height: 14px;
+          left: 70px; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -837,34 +929,30 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-#secondary {
-  display: none; }
-
-.blog .site-content, .error404 .site-content, .page-id-25 .site-content, .single-post .site-content {
+.blog .site-content, .error404 .site-content, .page-id-25 .site-content, .single-post .site-content, .search-results .site-content, .search-no-results .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 48px; }
 
-.blog #primary, .error404 #primary, .page-id-25 #primary, .single-post #primary {
+.blog #primary, .error404 #primary, .page-id-25 #primary, .single-post #primary, .search-results #primary, .search-no-results #primary {
   width: 75%;
   padding: 50px 80px; }
 
-.blog #secondary, .error404 #secondary, .page-id-25 #secondary, .single-post #secondary {
-  display: inline-block;
+.blog #secondary, .error404 #secondary, .page-id-25 #secondary, .single-post #secondary, .search-results #secondary, .search-no-results #secondary {
   width: auto;
   padding: 50px 50px;
   border-left: 1px solid #e4e4e4; }
-  .blog #secondary a, .error404 #secondary a, .page-id-25 #secondary a, .single-post #secondary a {
+  .blog #secondary a, .error404 #secondary a, .page-id-25 #secondary a, .single-post #secondary a, .search-results #secondary a, .search-no-results #secondary a {
     text-decoration: none;
     color: #248A83; }
-  .blog #secondary i, .error404 #secondary i, .page-id-25 #secondary i, .single-post #secondary i {
+  .blog #secondary i, .error404 #secondary i, .page-id-25 #secondary i, .single-post #secondary i, .search-results #secondary i, .search-no-results #secondary i {
     min-width: 35px;
     padding: 0 5px; }
-  .blog #secondary aside .widget-title, .error404 #secondary aside .widget-title, .page-id-25 #secondary aside .widget-title, .single-post #secondary aside .widget-title {
+  .blog #secondary aside .widget-title, .error404 #secondary aside .widget-title, .page-id-25 #secondary aside .widget-title, .single-post #secondary aside .widget-title, .search-results #secondary aside .widget-title, .search-no-results #secondary aside .widget-title {
     text-transform: uppercase;
     font-family: "no"; }
-  .blog #secondary aside ul, .error404 #secondary aside ul, .page-id-25 #secondary aside ul, .single-post #secondary aside ul {
+  .blog #secondary aside ul, .error404 #secondary aside ul, .page-id-25 #secondary aside ul, .single-post #secondary aside ul, .search-results #secondary aside ul, .search-no-results #secondary aside ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
