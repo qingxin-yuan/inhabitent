@@ -57,7 +57,7 @@ function inhabitent_cpt_product() {
       'capability_type'       => 'post',
       'show_in_rest'          => true,
     );
-    register_post_type( 'product', $args );
+    register_post_type( 'products', $args );
   
   }
   add_action( 'init', 'inhabitent_cpt_product', 0 );
