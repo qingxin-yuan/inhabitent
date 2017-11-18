@@ -845,13 +845,7 @@ a {
         text-align: right;
         overflow: hidden; }
         .post-type-archive #main .products-archive-list li .products-archive-text-wrapper .dots::before, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper .dots::before, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper .dots::before, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper .dots::before, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper .dots::before, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper .dots::before, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper .dots::before, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper .dots::before {
-          z-index: -5;
-          position: absolute;
-          content: '...........................';
-          top: 5px;
-          width: 14px;
-          height: 14px;
-          left: 70px; }
+          content: '...............'; }
 
 /* Asides */
 .blog .format-aside .entry-title,
