@@ -553,10 +553,10 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 30%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: auto;
     font-family: "no", sans-serif;
     text-transform: uppercase; }
     .main-navigation .main-menu .menu-main-menu-container {
@@ -565,26 +565,28 @@ a {
         padding: 0 0.5vw; }
         .main-navigation .main-menu .menu-main-menu-container li a {
           color: #248A83; }
-    .main-navigation .main-menu form fieldset {
-      width: 100%;
-      border: none;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      position: relative; }
-      .main-navigation .main-menu form fieldset button {
-        position: absolute;
-        top: 0;
-        left: -5px;
-        background: none;
+    .main-navigation .main-menu form {
+      width: 50%; }
+      .main-navigation .main-menu form fieldset {
+        width: 100%;
         border: none;
-        width: 10px; }
-      .main-navigation .main-menu form fieldset label {
-        position: absolute;
-        top: -5px;
-        left: 30px; }
-        .main-navigation .main-menu form fieldset label input {
-          border: none; }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative; }
+        .main-navigation .main-menu form fieldset button {
+          position: absolute;
+          top: 0;
+          left: -5px;
+          background: none;
+          border: none;
+          width: 10px; }
+        .main-navigation .main-menu form fieldset label {
+          position: absolute;
+          top: -5px;
+          left: 30px; }
+          .main-navigation .main-menu form fieldset label input {
+            border: none; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {

@@ -116,8 +116,9 @@ a {
 	.main-menu{
 		display: flex;
 		flex-direction: row;
-		align-items: center;
-		width: 30%;
+		// align-items: right;
+		justify-content: flex-end;
+		width: auto;
 		font-family: $font__uppercase;
 		text-transform: uppercase;
 		.menu-main-menu-container{
@@ -132,7 +133,7 @@ a {
 			
 	
 		form {
-			// width: 50%;
+			width: 50%;
 			
 			fieldset{
 			// width: 20%;
@@ -155,10 +156,17 @@ a {
 					input{
 						border: none;
 					}
-					
 				}
-
+			// 	.search-focus{
+			// 		width: 0;
+			// 	// 	width: 200px;
+			// }
+			// .search-field{
+			// 	width: 0;
+			// 	// width: 200px;
+			// }
 			}
+			
 		}
 }
 	
