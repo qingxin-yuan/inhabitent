@@ -180,7 +180,42 @@
   }
   
 }
-
+//FIND US PAGE STYLING
+.page-template-default{
+  .entry-header{
+    h1{
+      text-transform: uppercase;
+      font-family: $font-uppercase;
+      margin: 30px 0;
+    }
+  }
+  .entry-content{
+    h2{
+      text-transform: uppercase;
+      font-family: $font-uppercase;
+      margin: 30px 0;
+    }
+    form{
+      p{
+        line-height: 1.75;
+        margin: 20px 0;
+        text-transform: uppercase;
+        font-family: $font-uppercase;
+        input[type=submit]{
+          padding: 10px 20px;
+          background: $text-green;
+          color: white;
+          text-transform: uppercase;
+          font-family: $font-uppercase;
+          text-shadow: none;
+        }
+      }
+      .form-star{
+        color: crimson;
+      }
+    }
+  }
+}
 
 
 

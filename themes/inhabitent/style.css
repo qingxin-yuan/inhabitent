@@ -1090,6 +1090,32 @@ object {
     line-height: 1.75;
     padding: 15px 0; }
 
+.page-template-default .entry-header h1 {
+  text-transform: uppercase;
+  font-family: "no", sans-serif;
+  margin: 30px 0; }
+
+.page-template-default .entry-content h2 {
+  text-transform: uppercase;
+  font-family: "no", sans-serif;
+  margin: 30px 0; }
+
+.page-template-default .entry-content form p {
+  line-height: 1.75;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: "no", sans-serif; }
+  .page-template-default .entry-content form p input[type=submit] {
+    padding: 10px 20px;
+    background: #248A83;
+    color: white;
+    text-transform: uppercase;
+    font-family: "no", sans-serif;
+    text-shadow: none; }
+
+.page-template-default .entry-content form .form-star {
+  color: crimson; }
+
 .search .page-title {
   font-family: "no";
   text-transform: uppercase;
