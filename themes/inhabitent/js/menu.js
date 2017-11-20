@@ -1,13 +1,24 @@
 (function($){
-  $('#search-submit').focus(function(e){
+  $('#search-submit').click(function(e){
     e.preventDefault();
-   $('#search-field').css('width','200px');
+    $('#search-field').animate({
+      width:"250px"
+    },350);
     $('#search-field').focus();
-
+    $(document).keypress(function(e) {//detecting enter key for search
+      if(e.which == 13) {
+        $('.search-form').submit();
+      }
   });
-  $('#search-submit').blur(function(e){
+
+});
+  $('#search-field').blur(function(e){
     e.preventDefault();
-   $('#search-field').css('width', '0');
+    $('#search-field').animate({
+      width: "0"},350);
 
   });
+
+
+
 })(jQuery);

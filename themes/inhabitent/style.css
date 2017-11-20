@@ -539,54 +539,65 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 100px;
   border-bottom: 1px solid #e4e4e4;
   background: rgba(255, 255, 255, 0.8);
-  z-index: 3; }
+  z-index: 3;
+  font-family: "no", sans-serif;
+  text-transform: uppercase; }
   .main-navigation img {
     height: 24px; }
-  .main-navigation .main-menu {
+  .main-navigation .menu-main-menu-container {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: auto;
-    font-family: "no", sans-serif;
-    text-transform: uppercase; }
-    .main-navigation .main-menu .menu-main-menu-container {
-      width: 75%; }
-      .main-navigation .main-menu .menu-main-menu-container li {
-        padding: 0 0.5vw; }
-        .main-navigation .main-menu .menu-main-menu-container li a {
-          color: #248A83; }
-    .main-navigation .main-menu form {
-      width: 50%; }
-      .main-navigation .main-menu form fieldset {
-        width: 100%;
-        border: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        position: relative; }
-        .main-navigation .main-menu form fieldset button {
-          position: absolute;
-          top: 0;
-          left: -5px;
-          background: none;
-          border: none;
-          width: 10px; }
-        .main-navigation .main-menu form fieldset label {
-          position: absolute;
-          top: -5px;
-          left: 30px; }
-          .main-navigation .main-menu form fieldset label input {
-            border: none; }
+            justify-content: flex-end; }
+    .main-navigation .menu-main-menu-container li {
+      padding: 0 0.5vw; }
+      .main-navigation .menu-main-menu-container li a {
+        color: #248A83; }
+  .main-navigation form {
+    width: auto; }
+    .main-navigation form fieldset {
+      width: auto;
+      height: 30px;
+      border: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      padding: 0; }
+      .main-navigation form fieldset label {
+        top: -5px;
+        left: 20px;
+        width: auto; }
+
+#search-submit {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  background: none;
+  border: none;
+  width: 1.2rem;
+  height: 30px; }
+  #search-submit i {
+    font-size: 1rem;
+    color: #248A83; }
+
+#search-field {
+  margin-left: 1.5rem;
+  border: none;
+  width: 0;
+  height: 30px; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {

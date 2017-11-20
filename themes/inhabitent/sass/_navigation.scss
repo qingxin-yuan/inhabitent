@@ -103,26 +103,25 @@ a {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	// max-width: 1120px;
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 60px;
+	align-items: center;
+	padding: 10px 100px;
 	border-bottom: 1px solid #e4e4e4;
 	background: rgba(255,255,255, 0.8);
 	z-index:3;
+	font-family: $font__uppercase;
+	text-transform: uppercase;
 	img{
 		height: 24px;
 	}
-	.main-menu{
-		display: flex;
-		flex-direction: row;
-		// align-items: right;
-		justify-content: flex-end;
-		width: auto;
-		font-family: $font__uppercase;
-		text-transform: uppercase;
+
 		.menu-main-menu-container{
-			width: 75%;
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
 			li{
 			padding: 0 0.5vw;
 			a{
@@ -133,43 +132,46 @@ a {
 			
 	
 		form {
-			width: 50%;
+			width: auto;
 			
 			fieldset{
-			// width: 20%;
-			width: 100%;
+				width: auto;
+				height: 30px;
 				border: none;
 				display: flex;
+				align-items: center;
 				position: relative;
-				button{
-					position: absolute;
-					top: 0;
-					left: -5px;
-					background: none;
-					border: none;
-					width: 10px;
-				}
+				padding: 0;
+				
 				label{
-					position: absolute;
 					top: -5px;
-					left: 30px;
-					input{
-						border: none;
-					}
+					left: 20px;
+					width: auto;
+
 				}
-			// 	.search-focus{
-			// 		width: 0;
-			// 	// 	width: 200px;
-			// }
-			// .search-field{
-			// 	width: 0;
-			// 	// width: 200px;
-			// }
+
 			}
 			
 		}
 }
-	
+#search-submit{
+	position: absolute;
+	top: 0;
+	left: -5px;
+	background: none;
+	border: none;
+	width: 1.2rem;
+	height: 30px;
+	i{
+		font-size: 1rem;
+		color: #248A83;
+	}
+}	
+#search-field{
+	margin-left: 1.5rem;
+	border: none;
+	width: 0;
+	height: 30px;
 }
 
 
