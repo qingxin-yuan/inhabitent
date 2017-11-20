@@ -43,56 +43,91 @@
 
 //journal page
 .blog,.single-post{
-  .site-content{
-    
-    article .entry-header{
-    
-    position: relative;
-    text-transform: uppercase;
-    img{
-      width: 100%;
-    }
-    .entry-title{
-      color: white;
-      font-family: "no", sans-serif;
-      position: absolute;
-      top: 10px;
-      left:0;
-      max-width: 80%;
-      background: #248A83;
-      padding: 10px;
-      a{
-        text-decoration: none;
-        font-family: "no";
-        color: white;
-        width: 100%;
-      } 
-    }
-    .entry-meta{
-      position: absolute;
-      bottom: 6px;
-      right: 0;
-      color: white;
-      background: #248A83;
-      padding: 5px;
-      a{
-        color: white;
-        text-decoration: none;
-      }
-    }
+  #primary{
+    padding-top: 0;
   }
+  .site-content{
+    article {
+      margin: 50px 0;
+      .entry-header{
+    
+        position: relative;
+        text-transform: uppercase;
+        img{
+          width: 100%;
+        }
+        .entry-title{
+          color: white;
+          font-family: "no", sans-serif;
+          position: absolute;
+          top: 10px;
+          left:0;
+          max-width: 80%;
+          background: #248A83;
+          padding: 10px;
+          a{
+            text-decoration: none;
+            font-family: "no";
+            color: white;
+            width: 100%;
+          } 
+        }
+        .entry-meta{
+          position: absolute;
+          bottom: 6px;
+          right: 0;
+          color: white;
+          background: #248A83;
+          padding: 5px;
+          a{
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      .entry-content{
+        p{
+          margin: 20px 0;
+        }
+        a{
+          text-decoration: none;
+          font-family: "no", sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          color: black;
+          border: solid black 1px;
+          padding: 10px;
+          // width: 150px;
+        }
+      }
+  }
+      
   .entry-footer{
     margin-top: 40px;
     text-transform: uppercase;
     font-family: "no", sans-serif;
-      span{
-        margin: 20px 20px 10px 0;
-        a{
-        color: #248A83;
-        text-decoration: none;
-      }
-      }
-    } 
+    span{
+      margin: 20px 20px 10px 0;
+      a{
+      color: #248A83;
+      text-decoration: none;
+    }
+    }
+  }
+  .entry-summary{
+    a{
+      text-decoration: none;
+      font-family: "no", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: black;
+      border: solid black 1px;
+      padding: 10px;
+      width: 150px;
+      // margin: 10px 0;
+    }
+  } 
+
     .single-post-social-media{
       span{
         padding: 10px 20px;

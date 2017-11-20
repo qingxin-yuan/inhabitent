@@ -24,5 +24,6 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<a href="<?php echo the_permalink();?>">read more</a>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
