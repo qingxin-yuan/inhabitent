@@ -103,7 +103,6 @@ a {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	// max-width: 1120px;
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
@@ -111,24 +110,24 @@ a {
 	padding: 10px 100px;
 	border-bottom: 1px solid #e4e4e4;
 	background: rgba(255,255,255, 0.8);
-	z-index:3;
-	font-family: $font__uppercase;
+	z-index:10;
+	font-family: $font-uppercase;
 	text-transform: uppercase;
 	img{
 		height: 24px;
 	}
 
-		.menu-main-menu-container{
-			width: 100%;
-			display: flex;
-			justify-content: flex-end;
-			li{
-			padding: 0 0.5vw;
-			a{
-				color: #248A83;
-			}
+	.menu-main-menu-container{
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		li{
+		padding: 0 0.5vw;
+		a{
+			color: #248A83;
 		}
-		}
+	}
+	}
 			
 	
 		form {

@@ -4,6 +4,7 @@
 @import 'variables';
 /* Front page */
 
+
 .blog,.error404,.page-id-25,.single-post,.search-results,.search-no-results{
   .site-content{
     display: flex;
@@ -118,10 +119,119 @@
 
 }
 
+//search results & search no results page
+.search{
+  .page-title{
+    font-family: "no";
+    text-transform: uppercase;
+    font-size: 2rem;
+    // padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: $border_grey;
+  }
+  article{
+    padding: 20px 0;
 
-body{
-  font-family: $font__main;
+    .entry-title {
+      text-transform: uppercase;
+      font-size: 2rem;
+      
+      a{
+      text-decoration: none;
+      color: $text-green;
+      font-family: $font-uppercase;
+      }
+    }
+    .entry-summary{
+      // margin: 10px 0;
+      p{
+        margin: 30px 0;
+      }
+      a{
+        text-decoration: none;
+        font-family: "no", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+        border: solid black 1px;
+        padding: 10px;
+        width: 150px;
+        // margin: 10px 0;
+      }
+    }
+  }
+  .search-pagination{
+    height: 50px;
+    .page-numbers{
+      color: white;
+      background-color: $text-green;
+      // width: 30px;
+      // height: 50px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $font-uppercase;
+      font-size: 1.2rem;
+      padding: 9px 15px;
+      margin: 0 5px;
+    }
+  }
 }
+.search-no-results{
+  .page-content p{
+    font-family: $font-main;
+    font-size: 1.2rem;
+    margin: 0 20px;
+  }
+}
+
+//404 page styling
+.error404{
+  .site-main{
+    .page-title{
+      text-transform: uppercase;
+      font-family: $font-uppercase;
+      // font-size: 2rem;
+    }
+    .search-form{
+      margin: 20px 0;
+      // height: 40px;
+      fieldset{
+        width: 200px;
+        #search-field{
+          width: 200px;
+          margin: 0;
+        }
+      }
+    }
+    .widget-title,.widgettitle{
+      text-transform: uppercase;
+      font-family: $font-uppercase;
+      margin: 10px 0;
+    }
+    .widget ul{
+      list-style-type: none;
+      li{
+        text-transform: capitalize;
+        line-height: 1.75;
+      }
+      a{
+        text-decoration: none;
+        color: $text-green;
+        
+      }
+    }
+    select{
+      margin: 20px 10px;
+    }
+  }
+}
+
+
+//general
+body{
+  font-family: $font-main;
+}
+
 // FOOTER
 .site-footer{
   color: white;
@@ -132,7 +242,7 @@ body{
     padding: 0 150px;
     height: 75%;
     h3{
-      font-family: $font__uppercase;
+      font-family: $font-uppercase;
       text-transform: uppercase;
       color: $text-color_orange;
       }

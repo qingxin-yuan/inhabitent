@@ -4,6 +4,13 @@
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="home-banner-wrapper">
+			<img src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-full.svg'?>" class="home-logo" alt="inhabitent camping logo">
+
+		</div>
+
+
+
 		
 <!-- getting shop categories -->
 <section class="product-info-container">
