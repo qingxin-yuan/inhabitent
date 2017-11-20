@@ -16,10 +16,10 @@ get_header();
       </header>
       <div class="container">
         <div class="entry-content">
-          <h2>Our Story</h2>
+          <h1>Our Story</h1>
           <?php echo CFS()->get('about_our_story');?>
 
-          <h2>Our Team</h2>
+          <h1>Our Team</h1>
           <?php echo CFS()->get('about_our_team');?>
         </div>
       </div>
