@@ -55,8 +55,9 @@
 			</div>
 			<div class="home-journal-info-wrapper">
 				<p><?php the_date();?> / <?php comments_number();?></p>
+				<a href="<?php echo the_permalink();?>">
 				<h2><?php the_title();  ?></h2>
-				<a href="<?php echo the_permalink();?>">read more</a>
+				<p class="home-journal-button">read more</p></a>
 			</div>
 		</li>
 	<?php endforeach; wp_reset_postdata(); ?>

@@ -107,17 +107,28 @@
 				}
 				h2{
 					color: #248A83;
+					text-transform: uppercase;
 					font-family: "no", sans-serif;
+					&:hover{
+						color: #2f1339;
+					}
 				}
 				a{
 					text-decoration: none;
+					color: black;
+				}
+				.home-journal-button{
 					font-family: "no", sans-serif;
 					text-transform: uppercase;
 					text-align: center;
-					color: black;
 					border: solid black 1px;
 					padding: 5px;
 					width: 150px;
+					&:hover{
+						color: white;
+						background: $text-green;
+						border: none;
+					}
 				}
 			}
 		}
@@ -156,6 +167,9 @@
 			color: white;
 			background: #248A83;
 			padding: 10px 20px;
+			&:hover{
+				background: linear-gradient(30deg,rgba(60,60,60,0.5),rgba(60,60,60,0.5)),#248A83;
+			}
 		}
 	}
 }
@@ -390,6 +404,9 @@
 					a{
 						text-decoration: none;
 						color: #248A83;
+						&:hover{
+							color: #2f1339;
+						}
 					}
 				}
 			}

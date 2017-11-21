@@ -26,6 +26,9 @@
     a{
       text-decoration: none;
       color: #248A83;
+      &:hover{
+        color: #2f1339;
+      }
     }
     i{
       min-width: 35px;
@@ -74,9 +77,12 @@
           padding: 10px;
           a{
             text-decoration: none;
-            font-family: "no";
+            font-family: $font-uppercase;
             color: white;
             width: 100%;
+            &:hover{
+              color: #f0e4d1;
+            }
           } 
         }
         .entry-meta{
@@ -104,7 +110,11 @@
           color: black;
           border: solid black 1px;
           padding: 10px;
-          // width: 150px;
+          &:hover{
+            background: $text-green;
+            color: white;
+            border:none;
+          }
         }
       }
     }
@@ -211,7 +221,7 @@
 //search results & search no results page
 .search{
   .page-title{
-    font-family: "no";
+    font-family: $font-uppercase;
     text-transform: uppercase;
     font-size: 2rem;
     // padding-top: 20px;
@@ -229,6 +239,9 @@
         text-decoration: none;
         color: $text-green;
         font-family: $font-uppercase;
+        &:hover{
+          color: #2f1339;
+        }
       }
     }
     .entry-summary{
@@ -245,7 +258,11 @@
         border: solid black 1px;
         padding: 10px;
         width: 150px;
-        // margin: 10px 0;
+        &:hover{
+          color: white;
+          border: none;
+          background: #248A83;
+        }
       }
     }
   }
@@ -306,6 +323,9 @@
       a{
         text-decoration: none;
         color: $text-green;
+        &:hover{
+          color: #2f1339;
+        }
         
       }
     }
@@ -347,10 +367,16 @@ body{
         a{
           text-decoration: none;
           color: white;
+          &:hover{
+            text-decoration: underline;
+          }
         }
         i{
           padding: 0 7px;
           font-size: 1.5rem;
+          &:hover{
+            color: #d99054;
+          }
         }
       }
       .business-hours{
