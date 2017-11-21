@@ -38,10 +38,11 @@
 	margin-top: 50px;
 }
 
-// FRONT PAGE JOURNAL SECTION
+// FRONT PAGE STYLING
 .home{
+	//NAV BAR STYLING
 	.main-navigation{
-		background: rgba(255,255,255, 0);
+		// background: rgba(255,255,255, 0);
 		border: none;
 		button{
 			text-shadow: none;
@@ -51,15 +52,13 @@
 		margin-top: 0;
 	}
 	.site-main{
-	// article .entry-header{
-	// 	// display: none;
-	// }
 		h1{
 			text-transform: uppercase;
 			font-family: $font-uppercase;
 			margin: 30px auto;
 			text-align: center;
 		}
+		//HOME PAGE HERO IMAGE STYLING
 	.home-banner-wrapper{
 		display: flex;
 		justify-content: center;
@@ -69,63 +68,60 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-		.home-logo{
-			// height: 100%;
-		}
 	}
 } 
-
-
-
+//HOME PAGE JOURNAL SECTION STYLING
 	.home-journal-posts{
+		margin: 30px auto;
 		h1{
 			text-align: center;
-	}
+		}
 		ul{
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	li{
-		width: 30%;
-		max-height: 500px;
-		
-		padding-bottom: 10px;
-		margin: 0 15px;
-		border: solid #a1a1a1 1px;
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			margin: 0 8%;
+			li{
+				width: 30%;
+				max-height: 500px;
+				
+				padding-bottom: 10px;
+				margin: 0 15px;
+				border: solid #a1a1a1 1px;
 
-		.home-image-wrapper{
-			height: 60%;
-			padding: 0;
-			img{
-				height: 100%;
+				.home-image-wrapper{
+					height: 60%;
+					padding: 0;
+					img{
+						height: 100%;
+					}
+				}
+				.home-journal-info-wrapper{
+					height: 40%;
+					padding: 15px;
+					border-top: solid #a1a1a1 5px;
+					display:flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+				h2{
+					color: #248A83;
+					font-family: "no", sans-serif;
+				}
+				a{
+					text-decoration: none;
+					font-family: "no", sans-serif;
+					text-transform: uppercase;
+					text-align: center;
+					color: black;
+					border: solid black 1px;
+					padding: 5px;
+					width: 150px;
+				}
 			}
 		}
-		.home-journal-info-wrapper{
-			height: 40%;
-			padding: 15px;
-			border-top: solid #a1a1a1 5px;
-			display:flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-		h2{
-			color: #248A83;
-			font-family: "no", sans-serif;
-		}
-		a{
-			text-decoration: none;
-			font-family: "no", sans-serif;
-			text-transform: uppercase;
-			text-align: center;
-			color: black;
-			border: solid black 1px;
-			padding: 5px;
-			width: 150px;
-		}
-	}
-}
-} 
-
+	} 
+//HOME PAGE SAMPLE PRODUCTS SECTION STYLING
 .product-info-container{
 	h2{
 		text-align: center;
@@ -133,7 +129,8 @@
 	.product-type-blocks{
 		display:flex;
 		justify-content: space-between;
-		padding: 1vw 10vw;
+		padding:1% 8%;
+		margin: 0 0.8%;
 	}
 	.product-type-block-wrapper{
 		img{
@@ -158,13 +155,94 @@
 			color: white;
 			background: #248A83;
 			padding: 10px 20px;
-			// margin: 30px 0;
 		}
 	}
 }
+	.home-adventures{
+		margin: 50px auto;
+			p{
+			text-transform: uppercase;
+			text-align: center;
+			width: 200px;
+			color: white;
+			font-family: $font-uppercase;
+			background: #248A83;
+			margin: 30px 10%;
+			padding: 10px 0;
+			&:hover{
+				background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),#248A83;
+			}
+		}
+		.adventure-grid{
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 2fr 1fr 1fr;
+			height: 75%;
+			grid-gap: 20px;
+			justify-content: center;
+			margin: 20px 10%;
+			list-style-type: none;
+			h2{
+				text-transform: capitalize;
+				font-family: $font-main;
+				color: white;
+				padding: 0 20px;
+				text-align: left;
+				margin: 30px 0;
+				&:hover{
+					color: #f0e4d1;
+				}
+			}
+			p{
+				text-transform: uppercase;
+				background: none;
+				text-align: center;
+				font-family: $font-uppercase;
+				color: white;
+				border: 2px solid white;
+				padding: 10px 20px;
+				margin-left: 20px;
+				width: 150px;
+				&:hover{
+					background: #248A83;
+					border:none;
+				}
+			}
+		}
+		.adventure-1{
+			grid-row-start: 1;
+			grid-row-end: span 2;
+			grid-column-start: 1;
+			background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/canoe-girl.jpg');
+			background-size: cover;
 
+		}
+		.adventure-2{
+			grid-row-start: 1;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/beach-bonfire.jpg');
+			background-size: cover;
+			background-position: center -100px;
+		}
+		.adventure-3{
+			grid-row-start: 2;
+			grid-column-start: 2;
+			background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/mountain-hikers.jpg');
+			background-size: cover;
+		}
+		.adventure-4{
+			grid-row-start: 2;
+			grid-column-start: 3;
+			background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/night-sky.jpg');
+			background-size: cover;
+		}
+	
+	}
 
 } 
+
+
 // EACH JOURNAL PAGE STYLING
 
 
@@ -175,9 +253,10 @@
 .post-type-archive,.tax-product-type{
 	#main{
 		.page-header,.tax-custom-type-header{
-			font-family: "no", sans-serif;
-			margin: 2vw auto;
+			font-family: $font-uppercase;
+			padding-bottom: 3vw;
 			text-align: center;
+			border-bottom: $border_grey_dashed;
 			.products-archive-type-list{
 				display: flex;
 				list-style-type: none;
@@ -219,42 +298,21 @@
 					border: 1px solid #f0e4d1;
 					border-top: 5px solid #f0e4d1;;
 					padding: 10px;
-					// z-index: 5;
 					height: 60px;
-					// background: white;
 					span:first-child{
 						position: absolute;
 						left: 2px;
-						// top: 2px;
 						z-index: 3;
 						background: white;
 					}
 					span:last-child{
 						position: absolute;
 						right: 2px;
-						// top: 1px;
 						background: white;
 						&::before{
 							content: '...........................';
 						}
 					}
-					// .dots{
-					// 	background: white;
-					// 	flex-grow: 2;
-					// 	text-align: right;
-					// 	overflow: hidden;
-					// 	// z-index: 5;
-					// 	&::before{
-					// // 	// display:block;
-					// // 	z-index: -5;
-					// // 	position:absolute;
-					// 	content:'...............';
-					// // 	top: 5px;
-					// // 	width: 14px;
-					// // 	height: 14px;
-					// // 	left: 70px;
-					// }
-					// }
 					
 				}
 			}

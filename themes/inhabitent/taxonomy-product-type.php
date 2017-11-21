@@ -37,7 +37,7 @@ $posts = get_posts( $args );
   <li>
     <div class="tax-custom-image-wrapper">
   <?php if ( has_post_thumbnail() ) : ?>
-  <?php the_post_thumbnail( 'medium' ); ?>
+  <a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('medium');?></a>
   <?php endif; ?>
   </div>
   <div class="tax-custom-text-wrapper">

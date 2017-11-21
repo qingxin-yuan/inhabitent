@@ -63,6 +63,33 @@
 	</ul>
 </section>
 
+<section class="home-adventures">
+	<h1>latest adventures</h1>
+	<ul class="adventure-grid">
+		<li class="adventure-1">
+			<h2>getting back to nature in a canoe</h2>
+			<p>read more</p>
+		</li>
+		<li class="adventure-2">
+			<h2>a night with frinds at the beach</h2>
+			<p>read more</p>
+		</li>
+		<li class="adventure-3">
+		<h2>taking in the view at big mountain</h2>
+			<p>read more</p>
+		</li>
+		<li class="adventure-4">
+			<h2>star-gazing at the night sky</h2>
+			<p>read more</p>
+		</li>
+	</ul>
+	<p>more adventures</p>
+</section>
+
+
+
+
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -5,7 +5,7 @@
 /* Front page */
 
 
-.blog,.error404,.page-id-25,.single-post,.search-results,.search-no-results{
+.blog,.error404,.page-id-25,.single-post,.search-results,.search-no-results,.single-products{
   .site-content{
     display: flex;
     margin-top: 48px;
@@ -342,7 +342,7 @@ body{
     height: 300px;
     .site-info{
       display: flex;
-      padding: 0 150px;
+      padding: 0 5%;
       height: 75%;
       h3{
         font-family: $font-uppercase;
@@ -352,7 +352,7 @@ body{
       .contact-info,.business-hours{
         // height: 75%;
         width: 20vw;
-        padding: 20px;
+        padding: 2%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -373,7 +373,7 @@ body{
         }
       }
       .footer-image{
-        padding: 50px 0 50px 200px;
+        padding: 50px 3% 50px 30%;
         width: auto;
         a{
           text-decoration: none;

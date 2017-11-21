@@ -728,7 +728,6 @@ a {
   margin-top: 50px; }
 
 .home .main-navigation {
-  background: rgba(255, 255, 255, 0);
   border: none; }
   .home .main-navigation button {
     text-shadow: none; }
@@ -755,54 +754,56 @@ a {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.home .home-journal-posts h1 {
-  text-align: center; }
-
-.home .home-journal-posts ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .home .home-journal-posts ul li {
-    width: 30%;
-    max-height: 500px;
-    padding-bottom: 10px;
-    margin: 0 15px;
-    border: solid #a1a1a1 1px; }
-    .home .home-journal-posts ul li .home-image-wrapper {
-      height: 60%;
-      padding: 0; }
-      .home .home-journal-posts ul li .home-image-wrapper img {
-        height: 100%; }
-    .home .home-journal-posts ul li .home-journal-info-wrapper {
-      height: 40%;
-      padding: 15px;
-      border-top: solid #a1a1a1 5px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    .home .home-journal-posts ul li h2 {
-      color: #248A83;
-      font-family: "no", sans-serif; }
-    .home .home-journal-posts ul li a {
-      text-decoration: none;
-      font-family: "no", sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      color: black;
-      border: solid black 1px;
-      padding: 5px;
-      width: 150px; }
+.home .home-journal-posts {
+  margin: 30px auto; }
+  .home .home-journal-posts h1 {
+    text-align: center; }
+  .home .home-journal-posts ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 8%; }
+    .home .home-journal-posts ul li {
+      width: 30%;
+      max-height: 500px;
+      padding-bottom: 10px;
+      margin: 0 15px;
+      border: solid #a1a1a1 1px; }
+      .home .home-journal-posts ul li .home-image-wrapper {
+        height: 60%;
+        padding: 0; }
+        .home .home-journal-posts ul li .home-image-wrapper img {
+          height: 100%; }
+      .home .home-journal-posts ul li .home-journal-info-wrapper {
+        height: 40%;
+        padding: 15px;
+        border-top: solid #a1a1a1 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      .home .home-journal-posts ul li h2 {
+        color: #248A83;
+        font-family: "no", sans-serif; }
+      .home .home-journal-posts ul li a {
+        text-decoration: none;
+        font-family: "no", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+        border: solid black 1px;
+        padding: 5px;
+        width: 150px; }
 
 .home .product-info-container h2 {
   text-align: center; }
@@ -814,7 +815,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1vw 10vw; }
+  padding: 1% 8%;
+  margin: 0 0.8%; }
 
 .home .product-info-container .product-type-block-wrapper {
   margin: 0 20px;
@@ -837,10 +839,81 @@ a {
     background: #248A83;
     padding: 10px 20px; }
 
+.home .home-adventures {
+  margin: 50px auto; }
+  .home .home-adventures p {
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-family: "no", sans-serif;
+    background: #248A83;
+    margin: 30px 10%;
+    padding: 10px 0; }
+    .home .home-adventures p:hover {
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), #248A83; }
+  .home .home-adventures .adventure-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    height: 75%;
+    grid-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 10%;
+    list-style-type: none; }
+    .home .home-adventures .adventure-grid h2 {
+      text-transform: capitalize;
+      font-family: "Merriweather", serif;
+      color: white;
+      padding: 0 20px;
+      text-align: left;
+      margin: 30px 0; }
+      .home .home-adventures .adventure-grid h2:hover {
+        color: #f0e4d1; }
+    .home .home-adventures .adventure-grid p {
+      text-transform: uppercase;
+      background: none;
+      text-align: center;
+      font-family: "no", sans-serif;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      margin-left: 20px;
+      width: 150px; }
+      .home .home-adventures .adventure-grid p:hover {
+        background: #248A83;
+        border: none; }
+  .home .home-adventures .adventure-1 {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/canoe-girl.jpg");
+    background-size: cover; }
+  .home .home-adventures .adventure-2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/beach-bonfire.jpg");
+    background-size: cover;
+    background-position: center -100px; }
+  .home .home-adventures .adventure-3 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/mountain-hikers.jpg");
+    background-size: cover; }
+  .home .home-adventures .adventure-4 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/night-sky.jpg");
+    background-size: cover; }
+
 .post-type-archive #main .page-header, .post-type-archive #main .tax-custom-type-header, .tax-product-type #main .page-header, .tax-product-type #main .tax-custom-type-header {
   font-family: "no", sans-serif;
-  margin: 2vw auto;
-  text-align: center; }
+  padding-bottom: 3vw;
+  text-align: center;
+  border-bottom: 1px dashed #e4e4e4; }
   .post-type-archive #main .page-header .products-archive-type-list, .post-type-archive #main .tax-custom-type-header .products-archive-type-list, .tax-product-type #main .page-header .products-archive-type-list, .tax-product-type #main .tax-custom-type-header .products-archive-type-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -976,34 +1049,34 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.blog .site-content, .error404 .site-content, .page-id-25 .site-content, .single-post .site-content, .search-results .site-content, .search-no-results .site-content {
+.blog .site-content, .error404 .site-content, .page-id-25 .site-content, .single-post .site-content, .search-results .site-content, .search-no-results .site-content, .single-products .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 48px; }
 
-.blog #primary, .error404 #primary, .page-id-25 #primary, .single-post #primary, .search-results #primary, .search-no-results #primary {
+.blog #primary, .error404 #primary, .page-id-25 #primary, .single-post #primary, .search-results #primary, .search-no-results #primary, .single-products #primary {
   width: 75%;
   padding: 50px 80px; }
 
-.blog #secondary, .error404 #secondary, .page-id-25 #secondary, .single-post #secondary, .search-results #secondary, .search-no-results #secondary {
+.blog #secondary, .error404 #secondary, .page-id-25 #secondary, .single-post #secondary, .search-results #secondary, .search-no-results #secondary, .single-products #secondary {
   width: auto;
   padding: 50px 50px;
   border-left: 1px solid #e4e4e4; }
-  .blog #secondary a, .error404 #secondary a, .page-id-25 #secondary a, .single-post #secondary a, .search-results #secondary a, .search-no-results #secondary a {
+  .blog #secondary a, .error404 #secondary a, .page-id-25 #secondary a, .single-post #secondary a, .search-results #secondary a, .search-no-results #secondary a, .single-products #secondary a {
     text-decoration: none;
     color: #248A83; }
-  .blog #secondary i, .error404 #secondary i, .page-id-25 #secondary i, .single-post #secondary i, .search-results #secondary i, .search-no-results #secondary i {
+  .blog #secondary i, .error404 #secondary i, .page-id-25 #secondary i, .single-post #secondary i, .search-results #secondary i, .search-no-results #secondary i, .single-products #secondary i {
     min-width: 35px;
     padding: 0 5px; }
-  .blog #secondary aside .widget-title, .error404 #secondary aside .widget-title, .page-id-25 #secondary aside .widget-title, .single-post #secondary aside .widget-title, .search-results #secondary aside .widget-title, .search-no-results #secondary aside .widget-title {
+  .blog #secondary aside .widget-title, .error404 #secondary aside .widget-title, .page-id-25 #secondary aside .widget-title, .single-post #secondary aside .widget-title, .search-results #secondary aside .widget-title, .search-no-results #secondary aside .widget-title, .single-products #secondary aside .widget-title {
     text-transform: uppercase;
     font-family: "no", sans-serif; }
-  .blog #secondary aside ul, .error404 #secondary aside ul, .page-id-25 #secondary aside ul, .single-post #secondary aside ul, .search-results #secondary aside ul, .search-no-results #secondary aside ul {
+  .blog #secondary aside ul, .error404 #secondary aside ul, .page-id-25 #secondary aside ul, .single-post #secondary aside ul, .search-results #secondary aside ul, .search-no-results #secondary aside ul, .single-products #secondary aside ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  .blog #secondary aside .day-of-week, .error404 #secondary aside .day-of-week, .page-id-25 #secondary aside .day-of-week, .single-post #secondary aside .day-of-week, .search-results #secondary aside .day-of-week, .search-no-results #secondary aside .day-of-week {
+  .blog #secondary aside .day-of-week, .error404 #secondary aside .day-of-week, .page-id-25 #secondary aside .day-of-week, .single-post #secondary aside .day-of-week, .search-results #secondary aside .day-of-week, .search-no-results #secondary aside .day-of-week, .single-products #secondary aside .day-of-week {
     font-weight: 800; }
 
 .blog #primary, .single-post #primary {
@@ -1224,7 +1297,7 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding: 0 150px;
+      padding: 0 5%;
       height: 75%; }
       .site-footer .footer-background-image .site-info h3 {
         font-family: "no", sans-serif;
@@ -1232,7 +1305,7 @@ body {
         color: #d99054; }
       .site-footer .footer-background-image .site-info .contact-info, .site-footer .footer-background-image .site-info .business-hours {
         width: 20vw;
-        padding: 20px;
+        padding: 2%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1252,7 +1325,7 @@ body {
       .site-footer .footer-background-image .site-info .business-hours .text-bold {
         font-weight: bold; }
       .site-footer .footer-background-image .site-info .footer-image {
-        padding: 50px 0 50px 200px;
+        padding: 50px 3% 50px 30%;
         width: auto; }
         .site-footer .footer-background-image .site-info .footer-image a {
           text-decoration: none;
