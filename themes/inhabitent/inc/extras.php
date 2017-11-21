@@ -60,7 +60,7 @@ add_action( 'login_head', 'inhabitent_login_logo');
 
 //change login logo url to inhabitent website
 function inhabitent_logo_url( $url ) {
-	return get_bloginfo( 'url' );
+	return home_url();
 }
 add_filter( 'login_headerurl', 'inhabitent_logo_url' );
 //change login logo url title

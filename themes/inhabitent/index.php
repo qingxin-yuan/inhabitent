@@ -1,7 +1,7 @@
 <?php
 /**
  * The front page template file.
- *
+ *Text Domain: inhabitent
  */
 
 get_header(); ?>

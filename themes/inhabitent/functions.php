@@ -7,7 +7,7 @@
  * @package Inhabitent_Theme
  */
 
-if ( ! function_exists( 'red_starter_setup' ) ) :
+if ( ! function_exists( 'inhabitent_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
@@ -36,7 +36,7 @@ function inhabitent_setup() {
 	) );
 
 }
-endif; // red_starter_setup
+endif; // inhabitent_setup
 add_action( 'after_setup_theme', 'inhabitent_setup' );
 
 /**
