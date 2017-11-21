@@ -887,19 +887,18 @@ a {
       border: 1px solid #f0e4d1;
       border-top: 5px solid #f0e4d1;
       padding: 10px;
-      z-index: 5; }
-      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span {
-        z-index: 5;
+      height: 60px; }
+      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:first-child, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:first-child, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:first-child, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:first-child, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:first-child, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:first-child, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:first-child, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:first-child {
+        position: absolute;
+        left: 2px;
+        z-index: 3;
         background: white; }
-      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper .dots, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper .dots, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper .dots, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper .dots, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper .dots, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper .dots, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper .dots, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper .dots {
-        background: white;
-        -webkit-box-flex: 2;
-            -ms-flex-positive: 2;
-                flex-grow: 2;
-        text-align: right;
-        overflow: hidden; }
-        .post-type-archive #main .products-archive-list li .products-archive-text-wrapper .dots::before, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper .dots::before, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper .dots::before, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper .dots::before, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper .dots::before, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper .dots::before, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper .dots::before, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper .dots::before {
-          content: '...............'; }
+      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:last-child, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:last-child, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:last-child, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:last-child, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:last-child, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:last-child, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:last-child, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:last-child {
+        position: absolute;
+        right: 2px;
+        background: white; }
+        .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:last-child::before, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:last-child::before, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:last-child::before, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:last-child::before, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:last-child::before, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:last-child::before, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:last-child::before, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:last-child::before {
+          content: '...........................'; }
 
 /* Asides */
 .blog .format-aside .entry-title,
