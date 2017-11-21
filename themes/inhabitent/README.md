@@ -27,7 +27,7 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 * Search icon toggle effect using jQuery
 
 ## Author
-** Qingxin Yuan **
+**Qingxin Yuan**
 
 ## What I learned from the project
 * Building a WP custom theme is very SCSS heavy, but the feature of using mixins and variables in sass makes it a bit simpler and less repetitive.
