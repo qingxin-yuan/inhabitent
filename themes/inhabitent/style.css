@@ -471,6 +471,13 @@ textarea {
   textarea:focus {
     color: #111; }
 
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px; }
+
 textarea {
   width: 100%; }
 
@@ -908,6 +915,69 @@ a {
     grid-column-start: 3;
     background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/night-sky.jpg");
     background-size: cover; }
+
+.single-post .comments-area .comments-title {
+  margin: 50px 0;
+  text-transform: uppercase;
+  font-family: "no", sans-serif; }
+
+.single-post .comments-area ol {
+  border-bottom: none;
+  list-style-type: none; }
+  .single-post .comments-area ol li a {
+    text-decoration: none;
+    color: #248A83; }
+  .single-post .comments-area ol li .comment-body {
+    position: relative; }
+  .single-post .comments-area ol li .comment-author-avatar {
+    display: inline;
+    position: absolute;
+    top: 0; }
+  .single-post .comments-area ol li .comment-content {
+    margin-left: 100px; }
+
+.single-post .comments-area .comment-respond {
+  font-size: 1rem; }
+  .single-post .comments-area .comment-respond h3 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-family: "no", sans-serif; }
+  .single-post .comments-area .comment-respond p {
+    margin: 20px 0; }
+  .single-post .comments-area .comment-respond .comment-form-comment,
+  .single-post .comments-area .comment-respond .comment-form-author,
+  .single-post .comments-area .comment-respond .comment-form-email,
+  .single-post .comments-area .comment-respond .comment-form-url {
+    text-transform: uppercase;
+    font-family: "no", sans-serif; }
+    .single-post .comments-area .comment-respond .comment-form-comment .required,
+    .single-post .comments-area .comment-respond .comment-form-author .required,
+    .single-post .comments-area .comment-respond .comment-form-email .required,
+    .single-post .comments-area .comment-respond .comment-form-url .required {
+      color: #d99054; }
+  .single-post .comments-area .comment-respond .comment-form-author {
+    float: left;
+    width: 50%; }
+  .single-post .comments-area .comment-respond input[type="text"] {
+    width: 95%; }
+  .single-post .comments-area .comment-respond .comment-form-email {
+    float: right;
+    width: 50%; }
+  .single-post .comments-area .comment-respond input[type="email"] {
+    width: 100%; }
+  .single-post .comments-area .comment-respond input[type="url"] {
+    width: 100%; }
+  .single-post .comments-area .comment-respond input[type="submit"] {
+    color: white;
+    padding: 10px 30px;
+    background: #248A83;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-family: "no", sans-serif; }
+    .single-post .comments-area .comment-respond input[type="submit"]:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), #248A83; }
 
 .post-type-archive #main .page-header, .post-type-archive #main .tax-custom-type-header, .tax-product-type #main .page-header, .tax-product-type #main .tax-custom-type-header {
   font-family: "no", sans-serif;
