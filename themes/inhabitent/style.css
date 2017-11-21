@@ -321,6 +321,9 @@ h1 {
   font-weight: 600; }
 
 /* Copy */
+p {
+  line-height: 1.75; }
+
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -733,6 +736,12 @@ a {
 .home #content {
   margin-top: 0; }
 
+.home .site-main h1 {
+  text-transform: uppercase;
+  font-family: "no", sans-serif;
+  margin: 30px auto;
+  text-align: center; }
+
 .home .site-main .home-banner-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,7 +762,10 @@ a {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .home .home-journal-posts ul li {
     width: 30%;
     max-height: 500px;
@@ -802,18 +814,28 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 5vw 10vw; }
+  padding: 1vw 10vw; }
 
 .home .product-info-container .product-type-block-wrapper {
   margin: 0 20px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-align: center;
-  border: 2px solid #f0e4d1; }
+  border: 1px solid #f0e4d1;
+  border-top: 5px solid #f0e4d1; }
+  .home .product-info-container .product-type-block-wrapper img {
+    height: 5vw; }
+  .home .product-info-container .product-type-block-wrapper:hover {
+    border: 1px solid #d99054;
+    border-top: 5px solid #d99054; }
+  .home .product-info-container .product-type-block-wrapper p {
+    margin: 30px 0; }
   .home .product-info-container .product-type-block-wrapper a {
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: "no", sans-serif;
     color: white;
     background: #248A83;
-    margin: 10px; }
+    padding: 10px 20px; }
 
 .post-type-archive #main .page-header, .post-type-archive #main .tax-custom-type-header, .tax-product-type #main .page-header, .tax-product-type #main .tax-custom-type-header {
   font-family: "no", sans-serif;
@@ -977,11 +999,13 @@ object {
     padding: 0 5px; }
   .blog #secondary aside .widget-title, .error404 #secondary aside .widget-title, .page-id-25 #secondary aside .widget-title, .single-post #secondary aside .widget-title, .search-results #secondary aside .widget-title, .search-no-results #secondary aside .widget-title {
     text-transform: uppercase;
-    font-family: "no"; }
+    font-family: "no", sans-serif; }
   .blog #secondary aside ul, .error404 #secondary aside ul, .page-id-25 #secondary aside ul, .single-post #secondary aside ul, .search-results #secondary aside ul, .search-no-results #secondary aside ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
+  .blog #secondary aside .day-of-week, .error404 #secondary aside .day-of-week, .page-id-25 #secondary aside .day-of-week, .single-post #secondary aside .day-of-week, .search-results #secondary aside .day-of-week, .search-no-results #secondary aside .day-of-week {
+    font-weight: 800; }
 
 .blog #primary, .single-post #primary {
   padding-top: 0; }

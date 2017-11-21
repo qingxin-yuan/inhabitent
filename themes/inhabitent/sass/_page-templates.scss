@@ -30,12 +30,15 @@
     aside {
       .widget-title{
         text-transform: uppercase;
-        font-family: "no";
+        font-family: $font-uppercase;
       }
       ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
+      }
+      .day-of-week{
+        font-weight: 800;
       }
     } 
   }

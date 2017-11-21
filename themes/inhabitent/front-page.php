@@ -14,7 +14,7 @@
 		
 <!-- getting shop categories -->
 <section class="product-info-container">
-	<h2>Shop Stuff</h2>
+	<h1>Shop Stuff</h1>
 	<?php
 			$terms = get_terms( array(
 					'taxonomy' => 'product-type',

@@ -29,7 +29,7 @@
 					</div>
 
 					<div class="footer-image">
-						<a href=""><img src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-text.svg"></a>
+						<a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-text.svg"></a>
 					</div>
 
 				</div><!-- .site-info -->

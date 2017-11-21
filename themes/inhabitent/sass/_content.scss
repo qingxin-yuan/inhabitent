@@ -54,6 +54,12 @@
 	// article .entry-header{
 	// 	// display: none;
 	// }
+		h1{
+			text-transform: uppercase;
+			font-family: $font-uppercase;
+			margin: 30px auto;
+			text-align: center;
+		}
 	.home-banner-wrapper{
 		display: flex;
 		justify-content: center;
@@ -78,6 +84,7 @@
 		ul{
 	list-style-type: none;
 	display: flex;
+	justify-content: center;
 	li{
 		width: 30%;
 		max-height: 500px;
@@ -126,18 +133,32 @@
 	.product-type-blocks{
 		display:flex;
 		justify-content: space-between;
-		padding: 5vw 10vw;
+		padding: 1vw 10vw;
 	}
 	.product-type-block-wrapper{
+		img{
+			height: 5vw;
+		}
 		margin: 0 20px;
-		padding: 10px 30px;
+		padding: 10px 20px;
 		text-align: center;
-		border: 2px solid #f0e4d1;
+		border: 1px solid #f0e4d1;
+		border-top: 5px solid #f0e4d1;
+		&:hover{
+			border: 1px solid #d99054;
+			border-top: 5px solid #d99054;
+		}
+		p{
+			margin: 30px 0;
+		}
 		a{
 			text-decoration: none;
+			text-transform: uppercase;
+			font-family: $font-uppercase;
 			color: white;
 			background: #248A83;
-			margin: 10px;
+			padding: 10px 20px;
+			// margin: 30px 0;
 		}
 	}
 }
