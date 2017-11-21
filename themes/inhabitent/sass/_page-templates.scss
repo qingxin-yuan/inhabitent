@@ -5,7 +5,12 @@
 /* Front page */
 
 
-.blog,.error404,.page-id-25,.single-post,.search-results,.search-no-results,.single-products{
+.blog,
+.error404,
+.page-id-25,
+.single-post,
+.search-results,
+.search-no-results{
   .site-content{
     display: flex;
     margin-top: 48px;
@@ -44,7 +49,7 @@
   }
 }
 
-//journal page
+//JOURNAL ARCHIVE PAGE
 .blog,.single-post{
   #primary{
     padding-top: 0;
@@ -131,26 +136,7 @@
     } 
     
     .single-post-social-media{
-      span{
-        padding: 10px 20px;
-        border: 1px solid black;
-        text-transform: uppercase;
-        font-family: "no", sans-serif;
-        a{
-          color: black;
-          text-decoration: none;
-        }
-        i{
-          padding: 10px;
-        }
-        &:hover{
-          background: #248A83;
-          a{
-            color: white;
-          }
-        }
-        
-      }
+      @include social-media-span;
     }
   }
   
