@@ -64,7 +64,7 @@
 	</ul>
 </section>
 
-<section class="home-adventures">
+<!-- <section class="home-adventures">
 	<h1>latest adventures</h1>
 	<ul class="adventure-grid">
 		<li class="adventure-1">
@@ -85,8 +85,31 @@
 		</li>
 	</ul>
 	<p>more adventures</p>
-</section>
+</section> -->
 
+
+<section class="home-adventures">
+<h1>latest adventures<h1>
+<ul class="adventure-grid">
+	<?php
+		$args = array( 'post_type'=>'adventure');
+		$posts = get_posts( $args ); // returns an array of posts
+	?>
+	<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+		<li>
+			<h2><a href="<?php echo get_permalink();?>" class="adventure-title-link">
+				<?php the_title();?></a></h2>
+			
+			<p><a href="<?php echo get_permalink();?>">
+				read more</a></p>
+			
+		</li>
+	<?php endforeach; wp_reset_postdata(); ?>
+</ul>
+
+
+
+</section>
 
 
 

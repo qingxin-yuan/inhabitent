@@ -322,7 +322,8 @@ h1 {
 
 /* Copy */
 p {
-  line-height: 1.75; }
+  line-height: 1.75;
+  font-size: 1rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -882,6 +883,9 @@ a {
             justify-content: center;
     margin: 20px 10%;
     list-style-type: none; }
+    .home .home-adventures .adventure-grid a {
+      text-decoration: none;
+      color: white; }
     .home .home-adventures .adventure-grid h2 {
       text-transform: capitalize;
       font-family: "Merriweather", serif;
@@ -892,6 +896,7 @@ a {
       .home .home-adventures .adventure-grid h2:hover {
         color: #f0e4d1; }
     .home .home-adventures .adventure-grid p {
+      font-size: 1rem;
       text-transform: uppercase;
       background: none;
       text-align: center;
@@ -904,29 +909,29 @@ a {
       .home .home-adventures .adventure-grid p:hover {
         background: #248A83;
         border: none; }
-  .home .home-adventures .adventure-1 {
-    grid-row-start: 1;
-    grid-row-end: span 2;
-    grid-column-start: 1;
-    background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/canoe-girl.jpg");
-    background-size: cover; }
-  .home .home-adventures .adventure-2 {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/beach-bonfire.jpg");
-    background-size: cover;
-    background-position: center -100px; }
-  .home .home-adventures .adventure-3 {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/mountain-hikers.jpg");
-    background-size: cover; }
-  .home .home-adventures .adventure-4 {
-    grid-row-start: 2;
-    grid-column-start: 3;
-    background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/night-sky.jpg");
-    background-size: cover; }
+    .home .home-adventures .adventure-grid li:nth-child(1) {
+      grid-row-start: 1;
+      grid-row-end: span 2;
+      grid-column-start: 1;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/canoe-girl.jpg");
+      background-size: cover; }
+    .home .home-adventures .adventure-grid li:nth-child(2) {
+      grid-row-start: 1;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/beach-bonfire.jpg");
+      background-size: cover;
+      background-position: center -100px; }
+    .home .home-adventures .adventure-grid li:nth-child(3) {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/mountain-hikers.jpg");
+      background-size: cover; }
+    .home .home-adventures .adventure-grid li:nth-child(4) {
+      grid-row-start: 2;
+      grid-column-start: 3;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/night-sky.jpg");
+      background-size: cover; }
 
 .single-post .comments-area .comments-title {
   margin: 50px 0;

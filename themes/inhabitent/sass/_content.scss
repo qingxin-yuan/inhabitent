@@ -198,6 +198,10 @@
 			justify-content: center;
 			margin: 20px 10%;
 			list-style-type: none;
+			a{
+				text-decoration: none;
+				color: white;
+			}
 			h2{
 				text-transform: capitalize;
 				font-family: $font-main;
@@ -210,6 +214,7 @@
 				}
 			}
 			p{
+				font-size: 1rem;
 				text-transform: uppercase;
 				background: none;
 				text-align: center;
@@ -224,35 +229,36 @@
 					border:none;
 				}
 			}
+			li:nth-child(1){
+				grid-row-start: 1;
+				grid-row-end: span 2;
+				grid-column-start: 1;
+				background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/canoe-girl.jpg');
+				background-size: cover;
+	
+			}
+			li:nth-child(2){
+				grid-row-start: 1;
+				grid-column-start: 2;
+				grid-column-end: 4;
+				background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/beach-bonfire.jpg');
+				background-size: cover;
+				background-position: center -100px;
+			}
+			li:nth-child(3){
+				grid-row-start: 2;
+				grid-column-start: 2;
+				background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/mountain-hikers.jpg');
+				background-size: cover;
+			}
+			li:nth-child(4){
+				grid-row-start: 2;
+				grid-column-start: 3;
+				background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/night-sky.jpg');
+				background-size: cover;
+			}
 		}
-		.adventure-1{
-			grid-row-start: 1;
-			grid-row-end: span 2;
-			grid-column-start: 1;
-			background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/canoe-girl.jpg');
-			background-size: cover;
-
-		}
-		.adventure-2{
-			grid-row-start: 1;
-			grid-column-start: 2;
-			grid-column-end: 4;
-			background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/beach-bonfire.jpg');
-			background-size: cover;
-			background-position: center -100px;
-		}
-		.adventure-3{
-			grid-row-start: 2;
-			grid-column-start: 2;
-			background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/mountain-hikers.jpg');
-			background-size: cover;
-		}
-		.adventure-4{
-			grid-row-start: 2;
-			grid-column-start: 3;
-			background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),url('../../assets/images/adventure-photos/night-sky.jpg');
-			background-size: cover;
-		}
+		
 	
 	}
 
