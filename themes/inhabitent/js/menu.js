@@ -10,8 +10,8 @@
         $('.search-form').submit();
       }
   });
-
 });
+
   $('#search-field').blur(function(e){
     e.preventDefault();
     $('#search-field').animate({

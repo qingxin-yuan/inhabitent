@@ -149,8 +149,48 @@
       @include social-media-span;
     }
   }
-  
 }
+
+//ADVENTURE ARCHIVE PAGE
+.post-type-archive{
+  .adventures-archive-list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 5%;
+    justify-content: center;
+    align-items: center;
+    li div{
+      margin: 0 10px;
+      width: 40vw;
+      height: 70vh;
+
+      background-size: cover;
+      a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+          color: #f0e4d1;
+        }
+      }
+      
+      p{
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        margin-left: 20px;
+        width: 150px;
+        &:hover{
+          background: #248A83;
+          border:none;
+        }
+      }
+    }
+  }
+}
+
+
+
 //ABOUT PAGE STYLING
 .page-template-about{
   .entry-header{

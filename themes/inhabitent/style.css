@@ -1,19 +1,18 @@
 /*!
-Theme Name: inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: qingxin yuan
+Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: A WordPress inhabitent camping co.
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: inhabitent
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-inhabitent Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -1340,6 +1339,40 @@ object {
       background: #248A83; }
       .blog .site-content .single-post-social-media span:hover a, .single-post .site-content .single-post-social-media span:hover a {
         color: white; }
+
+.post-type-archive .adventures-archive-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .post-type-archive .adventures-archive-list li div {
+    margin: 0 10px;
+    width: 40vw;
+    height: 70vh;
+    background-size: cover; }
+    .post-type-archive .adventures-archive-list li div a {
+      text-decoration: none;
+      color: white; }
+      .post-type-archive .adventures-archive-list li div a:hover {
+        color: #f0e4d1; }
+    .post-type-archive .adventures-archive-list li div p {
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      margin-left: 20px;
+      width: 150px; }
+      .post-type-archive .adventures-archive-list li div p:hover {
+        background: #248A83;
+        border: none; }
 
 .page-template-about .entry-header {
   display: -webkit-box;
