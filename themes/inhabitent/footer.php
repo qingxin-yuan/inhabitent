@@ -10,8 +10,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 
-				<div class="footer-background-image" style="
-					background: url('<?php echo get_template_directory_uri();?>/assets/images/dark-wood.png');">
+				<div class="footer-background-image" >
 
 				<div class="site-info">
 					<div class="contact-info">

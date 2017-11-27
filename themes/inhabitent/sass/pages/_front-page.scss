@@ -1,8 +1,16 @@
 // FRONT PAGE STYLING
 .home{
-	//NAV BAR STYLING
+  //NAV BAR STYLING
+  .site-header{
+    height: 0;
+  }
 	.main-navigation{
-		border: none;
+    border: none;
+    background: none;
+    top: 0;
+    position: relative;
+    color: white;
+    // margin-top: 0;
 		button{
 			text-shadow: none;
 		}
@@ -68,7 +76,7 @@
 				h2{
 					color: #248A83;
 					text-transform: uppercase;
-					font-family: "no", sans-serif;
+					font-family: $font-uppercase;
 					&:hover{
 						color: #2f1339;
 					}
@@ -78,7 +86,7 @@
 					color: black;
 				}
 				.home-journal-button{
-					font-family: "no", sans-serif;
+					font-family: $font-uppercase;
 					text-transform: uppercase;
 					text-align: center;
 					border: solid black 1px;

@@ -5,11 +5,11 @@
       width:'250px'
     },350);
     $('#search-field').focus();
-    $(document).keypress(function(e) {//detecting enter key for search
-      if(e.which === 13) {
+    // $(document).keypress(function(e) {//detecting enter key for search
+    //   if(e.which === 13) {
         $('.search-form').submit();
-      }
-  });
+      // }
+  // });
 });
 
   $('#search-field').blur(function(e){

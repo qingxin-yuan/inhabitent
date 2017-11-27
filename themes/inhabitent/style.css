@@ -287,14 +287,14 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'no';
+  font-family: 'Novocento';
   src: url("../../assets/fonts/novocento/8f5322e4b0eabb9506ed00638ba0a6c9.eot");
   src: url("../../assets/fonts/novocento/8f5322e4b0eabb9506ed00638ba0a6c9.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/novocento/8f5322e4b0eabb9506ed00638ba0a6c9.woff2") format("woff2"), url("../../assets/fonts/novocento/8f5322e4b0eabb9506ed00638ba0a6c9.ttf") format("truetype"), url("../../assets/fonts/novocento/8f5322e4b0eabb9506ed00638ba0a6c9.svg#.") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'no';
+  font-family: 'Novocento';
   src: url("../../assets/fonts/novocento/341389a8e6934f0cf962046915f1a84a.eot");
   src: url("../../assets/fonts/novocento/341389a8e6934f0cf962046915f1a84a.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/novocento/341389a8e6934f0cf962046915f1a84a.woff2") format("woff2"), url("../../assets/fonts/novocento/341389a8e6934f0cf962046915f1a84a.ttf") format("truetype"), url("../../assets/fonts/novocento/341389a8e6934f0cf962046915f1a84a.svg#.") format("svg");
   font-weight: bold;
@@ -539,6 +539,11 @@ a:hover, a:active {
 .main-navigation.toggled ul {
   display: inline; }
 
+.admin-bar {
+  position: relative; }
+  .admin-bar .main-navigation {
+    top: 32px; }
+
 .main-navigation {
   position: fixed;
   top: 0;
@@ -557,7 +562,7 @@ a:hover, a:active {
   border-bottom: 1px solid #e4e4e4;
   background: rgba(255, 255, 255, 0.8);
   z-index: 10;
-  font-family: "no", sans-serif;
+  font-family: "Novocento", sans-serif;
   text-transform: uppercase; }
   .main-navigation img {
     height: 24px; }
@@ -744,7 +749,7 @@ a:hover, a:active {
 .single-post .comments-area .comments-title {
   margin: 50px 0;
   text-transform: uppercase;
-  font-family: "no", sans-serif; }
+  font-family: "Novocento", sans-serif; }
 
 .single-post .comments-area ol {
   border-bottom: none;
@@ -766,7 +771,7 @@ a:hover, a:active {
   .single-post .comments-area .comment-respond h3 {
     margin: 20px 0;
     text-transform: uppercase;
-    font-family: "no", sans-serif; }
+    font-family: "Novocento", sans-serif; }
   .single-post .comments-area .comment-respond p {
     margin: 20px 0; }
   .single-post .comments-area .comment-respond .comment-form-comment,
@@ -774,7 +779,7 @@ a:hover, a:active {
   .single-post .comments-area .comment-respond .comment-form-email,
   .single-post .comments-area .comment-respond .comment-form-url {
     text-transform: uppercase;
-    font-family: "no", sans-serif; }
+    font-family: "Novocento", sans-serif; }
     .single-post .comments-area .comment-respond .comment-form-comment .required,
     .single-post .comments-area .comment-respond .comment-form-author .required,
     .single-post .comments-area .comment-respond .comment-form-email .required,
@@ -798,7 +803,7 @@ a:hover, a:active {
     background: #248A83;
     text-shadow: none;
     text-transform: uppercase;
-    font-family: "no", sans-serif; }
+    font-family: "Novocento", sans-serif; }
     .single-post .comments-area .comment-respond input[type="submit"]:hover {
       -webkit-box-shadow: none;
               box-shadow: none;
@@ -822,10 +827,10 @@ a:hover, a:active {
   .single-products .entry-content h1 {
     text-transform: uppercase;
     color: #d99054;
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     margin: 15px 0; }
   .single-products .entry-content h3 {
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     font-weight: normal;
     font-size: 1.5rem;
     margin: 10px 0; }
@@ -835,7 +840,7 @@ a:hover, a:active {
       padding: 10px 20px;
       border: 1px solid black;
       text-transform: uppercase;
-      font-family: "no", sans-serif; }
+      font-family: "Novocento", sans-serif; }
       .single-products .entry-content .single-post-social-media span a {
         color: black;
         text-decoration: none; }
@@ -847,7 +852,7 @@ a:hover, a:active {
           color: white; }
 
 .post-type-archive #main .page-header, .post-type-archive #main .tax-custom-type-header, .tax-product-type #main .page-header, .tax-product-type #main .tax-custom-type-header {
-  font-family: "no", sans-serif;
+  font-family: "Novocento", sans-serif;
   padding-bottom: 3vw;
   text-align: center;
   border-bottom: 1px dashed #e4e4e4; }
@@ -1061,7 +1066,7 @@ object {
   .tag #secondary aside .widget-title,
   .category #secondary aside .widget-title {
     text-transform: uppercase;
-    font-family: "no", sans-serif; }
+    font-family: "Novocento", sans-serif; }
   .blog #secondary aside ul,
   .error404 #secondary aside ul,
   .page-id-25 #secondary aside ul,
@@ -1104,7 +1109,7 @@ object {
       padding: 10px; }
       .blog .site-content article .entry-header .entry-title a, .single-post .site-content article .entry-header .entry-title a {
         text-decoration: none;
-        font-family: "no", sans-serif;
+        font-family: "Novocento", sans-serif;
         color: white;
         width: 100%; }
         .blog .site-content article .entry-header .entry-title a:hover, .single-post .site-content article .entry-header .entry-title a:hover {
@@ -1123,7 +1128,7 @@ object {
     margin: 20px 0; }
   .blog .site-content article .entry-content a, .single-post .site-content article .entry-content a {
     text-decoration: none;
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: black;
@@ -1137,7 +1142,7 @@ object {
 .blog .site-content .entry-footer, .single-post .site-content .entry-footer {
   margin-top: 40px;
   text-transform: uppercase;
-  font-family: "no", sans-serif; }
+  font-family: "Novocento", sans-serif; }
   .blog .site-content .entry-footer span, .single-post .site-content .entry-footer span {
     margin: 20px 20px 10px 0; }
     .blog .site-content .entry-footer span a, .single-post .site-content .entry-footer span a {
@@ -1146,7 +1151,7 @@ object {
 
 .blog .site-content .entry-summary a, .single-post .site-content .entry-summary a {
   text-decoration: none;
-  font-family: "no", sans-serif;
+  font-family: "Novocento", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: black;
@@ -1160,7 +1165,7 @@ object {
     padding: 10px 20px;
     border: 1px solid black;
     text-transform: uppercase;
-    font-family: "no", sans-serif; }
+    font-family: "Novocento", sans-serif; }
     .blog .site-content .single-post-social-media span a, .single-post .site-content .single-post-social-media span a {
       color: black;
       text-decoration: none; }
@@ -1177,6 +1182,7 @@ body {
 .site-footer {
   color: white; }
   .site-footer .footer-background-image {
+    background: url("../../assets/images/dark-wood.png");
     height: 300px; }
     .site-footer .footer-background-image .site-info {
       display: -webkit-box;
@@ -1185,7 +1191,7 @@ body {
       padding: 0 5%;
       height: 75%; }
       .site-footer .footer-background-image .site-info h3 {
-        font-family: "no", sans-serif;
+        font-family: "Novocento", sans-serif;
         text-transform: uppercase;
         color: #d99054; }
       .site-footer .footer-background-image .site-info .contact-info, .site-footer .footer-background-image .site-info .business-hours {
@@ -1220,7 +1226,7 @@ body {
           text-decoration: none;
           color: white; }
     .site-footer .footer-background-image .footer-copyright {
-      font-family: "no",sans-serif;
+      font-family: "Novocento", sans-serif;
       text-transform: uppercase;
       text-align: center;
       padding: 10px; }
@@ -1239,13 +1245,13 @@ body {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-family: "no", sans-serif; }
+    font-family: "Novocento", sans-serif; }
 
 .page-template-about .entry-content {
   margin: 10px 300px; }
   .page-template-about .entry-content h1 {
     text-transform: uppercase;
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     margin: 30px 0;
     text-align: center; }
   .page-template-about .entry-content p {
@@ -1288,25 +1294,25 @@ body {
 
 .page-template-default .entry-header h1 {
   text-transform: uppercase;
-  font-family: "no", sans-serif;
+  font-family: "Novocento", sans-serif;
   margin: 30px 0; }
 
 .page-template-default .entry-content h2 {
   text-transform: uppercase;
-  font-family: "no", sans-serif;
+  font-family: "Novocento", sans-serif;
   margin: 30px 0; }
 
 .page-template-default .entry-content form p {
   line-height: 1.75;
   margin: 20px 0;
   text-transform: uppercase;
-  font-family: "no", sans-serif; }
+  font-family: "Novocento", sans-serif; }
   .page-template-default .entry-content form p input[type=submit] {
     padding: 10px 20px;
     background: #248A83;
     color: white;
     text-transform: uppercase;
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     text-shadow: none; }
 
 .page-template-default .entry-content form .form-star {
@@ -1314,7 +1320,7 @@ body {
 
 .error404 .site-main .page-title {
   text-transform: uppercase;
-  font-family: "no", sans-serif; }
+  font-family: "Novocento", sans-serif; }
 
 .error404 .site-main .search-form {
   margin: 20px 0; }
@@ -1326,7 +1332,7 @@ body {
 
 .error404 .site-main .widget-title, .error404 .site-main .widgettitle {
   text-transform: uppercase;
-  font-family: "no", sans-serif;
+  font-family: "Novocento", sans-serif;
   margin: 10px 0; }
 
 .error404 .site-main .widget ul {
@@ -1343,8 +1349,15 @@ body {
 .error404 .site-main select {
   margin: 20px 10px; }
 
+.home .site-header {
+  height: 0; }
+
 .home .main-navigation {
-  border: none; }
+  border: none;
+  background: none;
+  top: 0;
+  position: relative;
+  color: white; }
   .home .main-navigation button {
     text-shadow: none; }
 
@@ -1353,7 +1366,7 @@ body {
 
 .home .site-main h1 {
   text-transform: uppercase;
-  font-family: "no", sans-serif;
+  font-family: "Novocento", sans-serif;
   margin: 30px auto;
   text-align: center; }
 
@@ -1413,14 +1426,14 @@ body {
       .home .home-journal-posts ul li h2 {
         color: #248A83;
         text-transform: uppercase;
-        font-family: "no", sans-serif; }
+        font-family: "Novocento", sans-serif; }
         .home .home-journal-posts ul li h2:hover {
           color: #2f1339; }
       .home .home-journal-posts ul li a {
         text-decoration: none;
         color: black; }
       .home .home-journal-posts ul li .home-journal-button {
-        font-family: "no", sans-serif;
+        font-family: "Novocento", sans-serif;
         text-transform: uppercase;
         text-align: center;
         border: solid black 1px;
@@ -1460,7 +1473,7 @@ body {
   .home .product-info-container .product-type-block-wrapper a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     color: white;
     background: #248A83;
     padding: 10px 20px; }
@@ -1478,7 +1491,7 @@ body {
     text-align: center;
     width: 200px;
     color: white;
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     background: #248A83;
     margin: 30px 10%;
     padding: 10px 0; }
@@ -1512,7 +1525,7 @@ body {
       text-transform: uppercase;
       background: none;
       text-align: center;
-      font-family: "no", sans-serif;
+      font-family: "Novocento", sans-serif;
       color: white;
       border: 2px solid white;
       padding: 5px 20px;
@@ -1546,7 +1559,7 @@ body {
       background-size: cover; }
 
 .search .page-title {
-  font-family: "no", sans-serif;
+  font-family: "Novocento", sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
   padding-bottom: 20px;
@@ -1560,14 +1573,14 @@ body {
     .search article .entry-title a {
       text-decoration: none;
       color: #248A83;
-      font-family: "no", sans-serif; }
+      font-family: "Novocento", sans-serif; }
       .search article .entry-title a:hover {
         color: #2f1339; }
   .search article .entry-summary p {
     margin: 30px 0; }
   .search article .entry-summary a {
     text-decoration: none;
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: black;
@@ -1586,7 +1599,7 @@ body {
     background-color: #248A83;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "no", sans-serif;
+    font-family: "Novocento", sans-serif;
     font-size: 1.2rem;
     padding: 9px 15px;
     margin: 0 5px; }

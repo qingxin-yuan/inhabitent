@@ -98,6 +98,13 @@ a {
 }
 
 // CUSTOMIZATION
+//MAKE THE NAV BAR APPEAR UNDER THE ADMIN BAR WHEN LOGGED IN
+.admin-bar{
+	position: relative;
+	.main-navigation{
+		top: 32px;
+	}
+}
 .main-navigation{
 	position: fixed;
 	top: 0;
