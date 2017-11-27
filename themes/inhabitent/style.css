@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inabitent
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -21,6 +21,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Reset
 # Normalize
 # Embedded Fonts
 # Typography
@@ -1185,7 +1186,9 @@ object {
 .page-id-25 .site-content,
 .single-post .site-content,
 .search-results .site-content,
-.search-no-results .site-content {
+.search-no-results .site-content,
+.tag .site-content,
+.category .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1196,7 +1199,9 @@ object {
 .page-id-25 #primary,
 .single-post #primary,
 .search-results #primary,
-.search-no-results #primary {
+.search-no-results #primary,
+.tag #primary,
+.category #primary {
   width: 75%;
   padding: 50px 80px; }
 
@@ -1205,7 +1210,9 @@ object {
 .page-id-25 #secondary,
 .single-post #secondary,
 .search-results #secondary,
-.search-no-results #secondary {
+.search-no-results #secondary,
+.tag #secondary,
+.category #secondary {
   width: auto;
   padding: 50px 50px;
   border-left: 1px solid #e4e4e4; }
@@ -1214,7 +1221,9 @@ object {
   .page-id-25 #secondary a,
   .single-post #secondary a,
   .search-results #secondary a,
-  .search-no-results #secondary a {
+  .search-no-results #secondary a,
+  .tag #secondary a,
+  .category #secondary a {
     text-decoration: none;
     color: #248A83; }
     .blog #secondary a:hover,
@@ -1222,14 +1231,18 @@ object {
     .page-id-25 #secondary a:hover,
     .single-post #secondary a:hover,
     .search-results #secondary a:hover,
-    .search-no-results #secondary a:hover {
+    .search-no-results #secondary a:hover,
+    .tag #secondary a:hover,
+    .category #secondary a:hover {
       color: #2f1339; }
   .blog #secondary i,
   .error404 #secondary i,
   .page-id-25 #secondary i,
   .single-post #secondary i,
   .search-results #secondary i,
-  .search-no-results #secondary i {
+  .search-no-results #secondary i,
+  .tag #secondary i,
+  .category #secondary i {
     min-width: 35px;
     padding: 0 5px; }
   .blog #secondary aside .widget-title,
@@ -1237,7 +1250,9 @@ object {
   .page-id-25 #secondary aside .widget-title,
   .single-post #secondary aside .widget-title,
   .search-results #secondary aside .widget-title,
-  .search-no-results #secondary aside .widget-title {
+  .search-no-results #secondary aside .widget-title,
+  .tag #secondary aside .widget-title,
+  .category #secondary aside .widget-title {
     text-transform: uppercase;
     font-family: "no", sans-serif; }
   .blog #secondary aside ul,
@@ -1245,7 +1260,9 @@ object {
   .page-id-25 #secondary aside ul,
   .single-post #secondary aside ul,
   .search-results #secondary aside ul,
-  .search-no-results #secondary aside ul {
+  .search-no-results #secondary aside ul,
+  .tag #secondary aside ul,
+  .category #secondary aside ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
@@ -1254,7 +1271,9 @@ object {
   .page-id-25 #secondary aside .day-of-week,
   .single-post #secondary aside .day-of-week,
   .search-results #secondary aside .day-of-week,
-  .search-no-results #secondary aside .day-of-week {
+  .search-no-results #secondary aside .day-of-week,
+  .tag #secondary aside .day-of-week,
+  .category #secondary aside .day-of-week {
     font-weight: 800; }
 
 .blog #primary, .single-post #primary {
@@ -1345,175 +1364,6 @@ object {
       .blog .site-content .single-post-social-media span:hover a, .single-post .site-content .single-post-social-media span:hover a {
         color: white; }
 
-.post-type-archive .adventures-archive-list {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 30px 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .post-type-archive .adventures-archive-list li div {
-    margin: 0 10px;
-    width: 40vw;
-    height: 70vh;
-    background-size: cover; }
-    .post-type-archive .adventures-archive-list li div a {
-      text-decoration: none;
-      color: white; }
-      .post-type-archive .adventures-archive-list li div a:hover {
-        color: #f0e4d1; }
-    .post-type-archive .adventures-archive-list li div p {
-      color: white;
-      border: 2px solid white;
-      padding: 10px 20px;
-      margin-left: 20px;
-      width: 150px; }
-      .post-type-archive .adventures-archive-list li div p:hover {
-        background: #248A83;
-        border: none; }
-
-.page-template-about .entry-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .page-template-about .entry-header .entry-title {
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    font-family: "no", sans-serif; }
-
-.page-template-about .entry-content {
-  margin: 10px 300px; }
-  .page-template-about .entry-content h1 {
-    text-transform: uppercase;
-    font-family: "no", sans-serif;
-    margin: 30px 0;
-    text-align: center; }
-  .page-template-about .entry-content p {
-    line-height: 1.75;
-    padding: 15px 0; }
-
-.page-template-default .entry-header h1 {
-  text-transform: uppercase;
-  font-family: "no", sans-serif;
-  margin: 30px 0; }
-
-.page-template-default .entry-content h2 {
-  text-transform: uppercase;
-  font-family: "no", sans-serif;
-  margin: 30px 0; }
-
-.page-template-default .entry-content form p {
-  line-height: 1.75;
-  margin: 20px 0;
-  text-transform: uppercase;
-  font-family: "no", sans-serif; }
-  .page-template-default .entry-content form p input[type=submit] {
-    padding: 10px 20px;
-    background: #248A83;
-    color: white;
-    text-transform: uppercase;
-    font-family: "no", sans-serif;
-    text-shadow: none; }
-
-.page-template-default .entry-content form .form-star {
-  color: crimson; }
-
-.search .page-title {
-  font-family: "no", sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e4e4e4; }
-
-.search article {
-  padding: 20px 0; }
-  .search article .entry-title {
-    text-transform: uppercase;
-    font-size: 2rem; }
-    .search article .entry-title a {
-      text-decoration: none;
-      color: #248A83;
-      font-family: "no", sans-serif; }
-      .search article .entry-title a:hover {
-        color: #2f1339; }
-  .search article .entry-summary p {
-    margin: 30px 0; }
-  .search article .entry-summary a {
-    text-decoration: none;
-    font-family: "no", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
-    border: solid black 1px;
-    padding: 10px;
-    width: 150px; }
-    .search article .entry-summary a:hover {
-      color: white;
-      border: none;
-      background: #248A83; }
-
-.search .search-pagination {
-  height: 50px; }
-  .search .search-pagination .page-numbers {
-    color: white;
-    background-color: #248A83;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "no", sans-serif;
-    font-size: 1.2rem;
-    padding: 9px 15px;
-    margin: 0 5px; }
-
-.search-no-results .page-content p {
-  font-family: "Merriweather", serif;
-  font-size: 1.2rem;
-  margin: 0 20px; }
-
-.error404 .site-main .page-title {
-  text-transform: uppercase;
-  font-family: "no", sans-serif; }
-
-.error404 .site-main .search-form {
-  margin: 20px 0; }
-  .error404 .site-main .search-form fieldset {
-    width: 200px; }
-    .error404 .site-main .search-form fieldset #search-field {
-      width: 200px;
-      margin: 0; }
-
-.error404 .site-main .widget-title, .error404 .site-main .widgettitle {
-  text-transform: uppercase;
-  font-family: "no", sans-serif;
-  margin: 10px 0; }
-
-.error404 .site-main .widget ul {
-  list-style-type: none; }
-  .error404 .site-main .widget ul li {
-    text-transform: capitalize;
-    line-height: 1.75; }
-  .error404 .site-main .widget ul a {
-    text-decoration: none;
-    color: #248A83; }
-    .error404 .site-main .widget ul a:hover {
-      color: #2f1339; }
-
-.error404 .site-main select {
-  margin: 20px 10px; }
-
 body {
   font-family: "Merriweather", serif; }
 
@@ -1567,3 +1417,172 @@ body {
       text-transform: uppercase;
       text-align: center;
       padding: 10px; }
+
+.page-template-about .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-template-about .entry-header .entry-title {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: "no", sans-serif; }
+
+.page-template-about .entry-content {
+  margin: 10px 300px; }
+  .page-template-about .entry-content h1 {
+    text-transform: uppercase;
+    font-family: "no", sans-serif;
+    margin: 30px 0;
+    text-align: center; }
+  .page-template-about .entry-content p {
+    line-height: 1.75;
+    padding: 15px 0; }
+
+.post-type-archive .adventures-archive-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .post-type-archive .adventures-archive-list li div {
+    margin: 0 10px;
+    width: 40vw;
+    height: 70vh;
+    background-size: cover; }
+    .post-type-archive .adventures-archive-list li div a {
+      text-decoration: none;
+      color: white; }
+      .post-type-archive .adventures-archive-list li div a:hover {
+        color: #f0e4d1; }
+    .post-type-archive .adventures-archive-list li div p {
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      margin-left: 20px;
+      width: 150px; }
+      .post-type-archive .adventures-archive-list li div p:hover {
+        background: #248A83;
+        border: none; }
+
+.page-template-default .entry-header h1 {
+  text-transform: uppercase;
+  font-family: "no", sans-serif;
+  margin: 30px 0; }
+
+.page-template-default .entry-content h2 {
+  text-transform: uppercase;
+  font-family: "no", sans-serif;
+  margin: 30px 0; }
+
+.page-template-default .entry-content form p {
+  line-height: 1.75;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: "no", sans-serif; }
+  .page-template-default .entry-content form p input[type=submit] {
+    padding: 10px 20px;
+    background: #248A83;
+    color: white;
+    text-transform: uppercase;
+    font-family: "no", sans-serif;
+    text-shadow: none; }
+
+.page-template-default .entry-content form .form-star {
+  color: crimson; }
+
+.error404 .site-main .page-title {
+  text-transform: uppercase;
+  font-family: "no", sans-serif; }
+
+.error404 .site-main .search-form {
+  margin: 20px 0; }
+  .error404 .site-main .search-form fieldset {
+    width: 200px; }
+    .error404 .site-main .search-form fieldset #search-field {
+      width: 200px;
+      margin: 0; }
+
+.error404 .site-main .widget-title, .error404 .site-main .widgettitle {
+  text-transform: uppercase;
+  font-family: "no", sans-serif;
+  margin: 10px 0; }
+
+.error404 .site-main .widget ul {
+  list-style-type: none; }
+  .error404 .site-main .widget ul li {
+    text-transform: capitalize;
+    line-height: 1.75; }
+  .error404 .site-main .widget ul a {
+    text-decoration: none;
+    color: #248A83; }
+    .error404 .site-main .widget ul a:hover {
+      color: #2f1339; }
+
+.error404 .site-main select {
+  margin: 20px 10px; }
+
+.search .page-title {
+  font-family: "no", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4; }
+
+.search article {
+  padding: 20px 0; }
+  .search article .entry-title {
+    text-transform: uppercase;
+    font-size: 2rem; }
+    .search article .entry-title a {
+      text-decoration: none;
+      color: #248A83;
+      font-family: "no", sans-serif; }
+      .search article .entry-title a:hover {
+        color: #2f1339; }
+  .search article .entry-summary p {
+    margin: 30px 0; }
+  .search article .entry-summary a {
+    text-decoration: none;
+    font-family: "no", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    border: solid black 1px;
+    padding: 10px;
+    width: 150px; }
+    .search article .entry-summary a:hover {
+      color: white;
+      border: none;
+      background: #248A83; }
+
+.search .search-pagination {
+  height: 50px; }
+  .search .search-pagination .page-numbers {
+    color: white;
+    background-color: #248A83;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "no", sans-serif;
+    font-size: 1.2rem;
+    padding: 9px 15px;
+    margin: 0 5px; }
+
+.search-no-results .page-content p {
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+  margin: 0 20px; }

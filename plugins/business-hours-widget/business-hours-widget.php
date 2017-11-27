@@ -21,6 +21,7 @@
  * Author URI:        @TODO
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain: bizhours
  */
 
 // Prevent direct file access
@@ -154,7 +155,7 @@ class Tent_Biz_Hours extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' 				=> 'Business Hours',
+				'title' 				=> __('Business Hours', 'bizhours'),
 				'moday_friday' 	=> '',
 				'saturday' 			=> '',
 				'sunday' 				=> ''
