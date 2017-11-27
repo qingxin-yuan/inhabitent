@@ -15,7 +15,7 @@
   $('#search-field').blur(function(e){
     e.preventDefault();
     $('#search-field').animate({
-      width: '0'},350);
+      width: "0"},350);
 
   });
 

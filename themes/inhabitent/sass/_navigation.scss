@@ -168,12 +168,18 @@ a {
 		font-size: 1rem;
 		color: #248A83;
 	}
+	&:hover{
+		box-shadow: none;
+	}
 }	
 #search-field{
+
+	background: none;
 	margin-left: 1.5rem;
 	border: none;
 	width: 0;
 	height: 30px;
+
 }
 
 
