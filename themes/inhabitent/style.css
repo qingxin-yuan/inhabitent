@@ -491,16 +491,14 @@ input {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+a:hover, a:focus, a:active {
+  color: midnightblue; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation ul {
@@ -742,202 +740,6 @@ a {
 
 #content {
   margin-top: 50px; }
-
-.home .main-navigation {
-  border: none; }
-  .home .main-navigation button {
-    text-shadow: none; }
-
-.home #content {
-  margin-top: 0; }
-
-.home .site-main h1 {
-  text-transform: uppercase;
-  font-family: "no", sans-serif;
-  margin: 30px auto;
-  text-align: center; }
-
-.home .site-main .home-banner-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-  background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/home-hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
-
-.home .home-journal-posts {
-  margin: 30px auto; }
-  .home .home-journal-posts h1 {
-    text-align: center; }
-  .home .home-journal-posts ul {
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 8%; }
-    .home .home-journal-posts ul li {
-      width: 30%;
-      max-height: 500px;
-      padding-bottom: 10px;
-      margin: 0 15px;
-      border: solid #a1a1a1 1px; }
-      .home .home-journal-posts ul li .home-image-wrapper {
-        height: 60%;
-        padding: 0; }
-        .home .home-journal-posts ul li .home-image-wrapper img {
-          height: 100%; }
-      .home .home-journal-posts ul li .home-journal-info-wrapper {
-        height: 40%;
-        padding: 15px;
-        border-top: solid #a1a1a1 5px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
-      .home .home-journal-posts ul li h2 {
-        color: #248A83;
-        text-transform: uppercase;
-        font-family: "no", sans-serif; }
-        .home .home-journal-posts ul li h2:hover {
-          color: #2f1339; }
-      .home .home-journal-posts ul li a {
-        text-decoration: none;
-        color: black; }
-      .home .home-journal-posts ul li .home-journal-button {
-        font-family: "no", sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        border: solid black 1px;
-        padding: 5px;
-        width: 150px; }
-        .home .home-journal-posts ul li .home-journal-button:hover {
-          color: white;
-          background: #248A83;
-          border: none; }
-
-.home .product-info-container h2 {
-  text-align: center; }
-
-.home .product-info-container .product-type-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1% 8%;
-  margin: 0 0.8%; }
-
-.home .product-info-container .product-type-block-wrapper {
-  margin: 0 20px;
-  padding: 10px 20px;
-  text-align: center;
-  border: 1px solid #f0e4d1;
-  border-top: 5px solid #f0e4d1; }
-  .home .product-info-container .product-type-block-wrapper img {
-    height: 5vw; }
-  .home .product-info-container .product-type-block-wrapper:hover {
-    border: 1px solid #d99054;
-    border-top: 5px solid #d99054; }
-  .home .product-info-container .product-type-block-wrapper p {
-    margin: 30px 0; }
-  .home .product-info-container .product-type-block-wrapper a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "no", sans-serif;
-    color: white;
-    background: #248A83;
-    padding: 10px 20px; }
-    .home .product-info-container .product-type-block-wrapper a:hover {
-      background: linear-gradient(30deg, rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.5)), #248A83; }
-
-.home .home-adventures {
-  margin: 50px auto; }
-  .home .home-adventures p {
-    text-transform: uppercase;
-    text-align: center;
-    width: 200px;
-    color: white;
-    font-family: "no", sans-serif;
-    background: #248A83;
-    margin: 30px 10%;
-    padding: 10px 0; }
-    .home .home-adventures p:hover {
-      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), #248A83; }
-  .home .home-adventures .adventure-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 2fr 1fr 1fr;
-    height: 75%;
-    grid-gap: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 20px 10%;
-    list-style-type: none; }
-    .home .home-adventures .adventure-grid a {
-      text-decoration: none;
-      color: white; }
-    .home .home-adventures .adventure-grid h2 {
-      text-transform: capitalize;
-      font-family: "Merriweather", serif;
-      color: white;
-      padding: 0 20px;
-      text-align: left;
-      margin: 30px 0; }
-      .home .home-adventures .adventure-grid h2:hover {
-        color: #f0e4d1; }
-    .home .home-adventures .adventure-grid p {
-      font-size: 1rem;
-      text-transform: uppercase;
-      background: none;
-      text-align: center;
-      font-family: "no", sans-serif;
-      color: white;
-      border: 2px solid white;
-      padding: 10px 20px;
-      margin-left: 20px;
-      width: 150px; }
-      .home .home-adventures .adventure-grid p:hover {
-        background: #248A83;
-        border: none; }
-    .home .home-adventures .adventure-grid li:nth-child(1) {
-      grid-row-start: 1;
-      grid-row-end: span 2;
-      grid-column-start: 1;
-      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/canoe-girl.jpg");
-      background-size: cover; }
-    .home .home-adventures .adventure-grid li:nth-child(2) {
-      grid-row-start: 1;
-      grid-column-start: 2;
-      grid-column-end: 4;
-      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/beach-bonfire.jpg");
-      background-size: cover;
-      background-position: center -100px; }
-    .home .home-adventures .adventure-grid li:nth-child(3) {
-      grid-row-start: 2;
-      grid-column-start: 2;
-      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/mountain-hikers.jpg");
-      background-size: cover; }
-    .home .home-adventures .adventure-grid li:nth-child(4) {
-      grid-row-start: 2;
-      grid-column-start: 3;
-      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/night-sky.jpg");
-      background-size: cover; }
 
 .single-post .comments-area .comments-title {
   margin: 50px 0;
@@ -1387,7 +1189,7 @@ body {
         text-transform: uppercase;
         color: #d99054; }
       .site-footer .footer-background-image .site-info .contact-info, .site-footer .footer-background-image .site-info .business-hours {
-        width: 20vw;
+        width: 40vw;
         padding: 2%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1450,7 +1252,7 @@ body {
     line-height: 1.75;
     padding: 15px 0; }
 
-.post-type-archive .adventures-archive-list {
+.post-type-archive-adventure .adventures-archive-list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1464,23 +1266,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .post-type-archive .adventures-archive-list li div {
+  .post-type-archive-adventure .adventures-archive-list li div {
     margin: 0 10px;
     width: 40vw;
     height: 70vh;
     background-size: cover; }
-    .post-type-archive .adventures-archive-list li div a {
+    .post-type-archive-adventure .adventures-archive-list li div a {
       text-decoration: none;
       color: white; }
-      .post-type-archive .adventures-archive-list li div a:hover {
+      .post-type-archive-adventure .adventures-archive-list li div a:hover {
         color: #f0e4d1; }
-    .post-type-archive .adventures-archive-list li div p {
+    .post-type-archive-adventure .adventures-archive-list li div p {
       color: white;
       border: 2px solid white;
       padding: 10px 20px;
       margin-left: 20px;
       width: 150px; }
-      .post-type-archive .adventures-archive-list li div p:hover {
+      .post-type-archive-adventure .adventures-archive-list li div p:hover {
         background: #248A83;
         border: none; }
 
@@ -1540,6 +1342,208 @@ body {
 
 .error404 .site-main select {
   margin: 20px 10px; }
+
+.home .main-navigation {
+  border: none; }
+  .home .main-navigation button {
+    text-shadow: none; }
+
+.home #content {
+  margin-top: 0; }
+
+.home .site-main h1 {
+  text-transform: uppercase;
+  font-family: "no", sans-serif;
+  margin: 30px auto;
+  text-align: center; }
+
+.home .site-main .home-banner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/home-hero.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.home .home-journal-posts {
+  margin: 30px auto; }
+  .home .home-journal-posts h1 {
+    text-align: center; }
+  .home .home-journal-posts ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 8%; }
+    .home .home-journal-posts ul li {
+      height: 65vh;
+      width: 30%;
+      max-height: 500px;
+      padding-bottom: 10px;
+      margin: 0 15px;
+      border: solid #a1a1a1 1px; }
+      .home .home-journal-posts ul li .home-image-wrapper {
+        height: 60%;
+        padding: 0; }
+        .home .home-journal-posts ul li .home-image-wrapper img {
+          height: 100%; }
+      .home .home-journal-posts ul li .home-journal-info-wrapper {
+        height: 40%;
+        padding: 15px;
+        border-top: solid #a1a1a1 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      .home .home-journal-posts ul li h2 {
+        color: #248A83;
+        text-transform: uppercase;
+        font-family: "no", sans-serif; }
+        .home .home-journal-posts ul li h2:hover {
+          color: #2f1339; }
+      .home .home-journal-posts ul li a {
+        text-decoration: none;
+        color: black; }
+      .home .home-journal-posts ul li .home-journal-button {
+        font-family: "no", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        border: solid black 1px;
+        padding: 5px;
+        width: 150px; }
+        .home .home-journal-posts ul li .home-journal-button:hover {
+          color: white;
+          background: #248A83;
+          border: none; }
+
+.home .product-info-container h2 {
+  text-align: center; }
+
+.home .product-info-container .product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1% 8%;
+  margin: 0 0.8%; }
+
+.home .product-info-container .product-type-block-wrapper {
+  margin: 0 20px;
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #f0e4d1;
+  border-top: 5px solid #f0e4d1; }
+  .home .product-info-container .product-type-block-wrapper img {
+    height: 5vw; }
+  .home .product-info-container .product-type-block-wrapper:hover {
+    border: 1px solid #d99054;
+    border-top: 5px solid #d99054; }
+  .home .product-info-container .product-type-block-wrapper p {
+    margin: 30px 0; }
+  .home .product-info-container .product-type-block-wrapper a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "no", sans-serif;
+    color: white;
+    background: #248A83;
+    padding: 10px 20px; }
+    .home .product-info-container .product-type-block-wrapper a:hover {
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.5), rgba(60, 60, 60, 0.5)), #248A83; }
+
+.home .home-adventures {
+  margin: 50px auto; }
+  .home .home-adventures .more-adventure-link {
+    text-decoration: none;
+    color: white;
+    width: 100%; }
+  .home .home-adventures p {
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-family: "no", sans-serif;
+    background: #248A83;
+    margin: 30px 10%;
+    padding: 10px 0; }
+    .home .home-adventures p:hover {
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), #248A83; }
+  .home .home-adventures .adventure-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    height: 75vh;
+    grid-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 10%;
+    list-style-type: none; }
+    .home .home-adventures .adventure-grid a {
+      text-decoration: none;
+      color: white; }
+    .home .home-adventures .adventure-grid h2 {
+      text-transform: capitalize;
+      font-family: "Merriweather", serif;
+      color: white;
+      padding: 0 20px;
+      text-align: left;
+      margin: 20px 0; }
+      .home .home-adventures .adventure-grid h2:hover {
+        color: #f0e4d1; }
+    .home .home-adventures .adventure-grid p {
+      font-size: 1rem;
+      text-transform: uppercase;
+      background: none;
+      text-align: center;
+      font-family: "no", sans-serif;
+      color: white;
+      border: 2px solid white;
+      padding: 5px 20px;
+      margin-left: 20px;
+      width: 150px; }
+      .home .home-adventures .adventure-grid p:hover {
+        background: #248A83;
+        border: none; }
+    .home .home-adventures .adventure-grid li:nth-child(1) {
+      grid-row-start: 1;
+      grid-row-end: span 2;
+      grid-column-start: 1;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/canoe-girl.jpg");
+      background-size: cover; }
+    .home .home-adventures .adventure-grid li:nth-child(2) {
+      grid-row-start: 1;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/beach-bonfire.jpg");
+      background-size: cover;
+      background-position: center -100px; }
+    .home .home-adventures .adventure-grid li:nth-child(3) {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/mountain-hikers.jpg");
+      background-size: cover; }
+    .home .home-adventures .adventure-grid li:nth-child(4) {
+      grid-row-start: 2;
+      grid-column-start: 3;
+      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), url("../../assets/images/adventure-photos/night-sky.jpg");
+      background-size: cover; }
 
 .search .page-title {
   font-family: "no", sans-serif;

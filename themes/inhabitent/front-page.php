@@ -64,29 +64,6 @@
 	</ul>
 </section>
 
-<!-- <section class="home-adventures">
-	<h1>latest adventures</h1>
-	<ul class="adventure-grid">
-		<li class="adventure-1">
-			<h2>getting back to nature in a canoe</h2>
-			<p>read more</p>
-		</li>
-		<li class="adventure-2">
-			<h2>a night with frinds at the beach</h2>
-			<p>read more</p>
-		</li>
-		<li class="adventure-3">
-		<h2>taking in the view at big mountain</h2>
-			<p>read more</p>
-		</li>
-		<li class="adventure-4">
-			<h2>star-gazing at the night sky</h2>
-			<p>read more</p>
-		</li>
-	</ul>
-	<p>more adventures</p>
-</section> -->
-
 
 <section class="home-adventures">
 <h1>latest adventures<h1>
@@ -100,14 +77,13 @@
 			<h2><a href="<?php echo get_permalink();?>" class="adventure-title-link">
 				<?php the_title();?></a></h2>
 			
-			<p><a href="<?php echo get_permalink();?>">
-				read more</a></p>
+			<p><a href="<?php echo get_permalink();?>">read more</a></p>
 			
 		</li>
 	<?php endforeach; wp_reset_postdata(); ?>
 </ul>
 
-
+<p><a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventure-link">more adventures</a></p>
 
 </section>
 
