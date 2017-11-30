@@ -442,9 +442,7 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -452,9 +450,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #aaa #bbb #bbb; }
 
 /* Fields */
 input[type="text"],
@@ -746,69 +742,6 @@ a:hover, a:active {
 #content {
   margin-top: 50px; }
 
-.single-post .comments-area .comments-title {
-  margin: 50px 0;
-  text-transform: uppercase;
-  font-family: "Novocento", sans-serif; }
-
-.single-post .comments-area ol {
-  border-bottom: none;
-  list-style-type: none; }
-  .single-post .comments-area ol li a {
-    text-decoration: none;
-    color: #248A83; }
-  .single-post .comments-area ol li .comment-body {
-    position: relative; }
-  .single-post .comments-area ol li .comment-author-avatar {
-    display: inline;
-    position: absolute;
-    top: 0; }
-  .single-post .comments-area ol li .comment-content {
-    margin-left: 100px; }
-
-.single-post .comments-area .comment-respond {
-  font-size: 1rem; }
-  .single-post .comments-area .comment-respond h3 {
-    margin: 20px 0;
-    text-transform: uppercase;
-    font-family: "Novocento", sans-serif; }
-  .single-post .comments-area .comment-respond p {
-    margin: 20px 0; }
-  .single-post .comments-area .comment-respond .comment-form-comment,
-  .single-post .comments-area .comment-respond .comment-form-author,
-  .single-post .comments-area .comment-respond .comment-form-email,
-  .single-post .comments-area .comment-respond .comment-form-url {
-    text-transform: uppercase;
-    font-family: "Novocento", sans-serif; }
-    .single-post .comments-area .comment-respond .comment-form-comment .required,
-    .single-post .comments-area .comment-respond .comment-form-author .required,
-    .single-post .comments-area .comment-respond .comment-form-email .required,
-    .single-post .comments-area .comment-respond .comment-form-url .required {
-      color: #d99054; }
-  .single-post .comments-area .comment-respond .comment-form-author {
-    float: left;
-    width: 50%; }
-  .single-post .comments-area .comment-respond input[type="text"] {
-    width: 95%; }
-  .single-post .comments-area .comment-respond .comment-form-email {
-    float: right;
-    width: 50%; }
-  .single-post .comments-area .comment-respond input[type="email"] {
-    width: 100%; }
-  .single-post .comments-area .comment-respond input[type="url"] {
-    width: 100%; }
-  .single-post .comments-area .comment-respond input[type="submit"] {
-    color: white;
-    padding: 10px 30px;
-    background: #248A83;
-    text-shadow: none;
-    text-transform: uppercase;
-    font-family: "Novocento", sans-serif; }
-    .single-post .comments-area .comment-respond input[type="submit"]:hover {
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      background: linear-gradient(30deg, rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.3)), #248A83; }
-
 .single-products .site-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -851,12 +784,16 @@ a:hover, a:active {
         .single-products .entry-content .single-post-social-media span:hover a {
           color: white; }
 
-.post-type-archive #main .page-header, .post-type-archive #main .tax-custom-type-header, .tax-product-type #main .page-header, .tax-product-type #main .tax-custom-type-header {
+.post-type-archive #main .page-header, .post-type-archive #main .tax-custom-type-header,
+.tax-product-type #main .page-header,
+.tax-product-type #main .tax-custom-type-header {
   font-family: "Novocento", sans-serif;
   padding-bottom: 3vw;
   text-align: center;
   border-bottom: 1px dashed #e4e4e4; }
-  .post-type-archive #main .page-header .products-archive-type-list, .post-type-archive #main .tax-custom-type-header .products-archive-type-list, .tax-product-type #main .page-header .products-archive-type-list, .tax-product-type #main .tax-custom-type-header .products-archive-type-list {
+  .post-type-archive #main .page-header .products-archive-type-list, .post-type-archive #main .tax-custom-type-header .products-archive-type-list,
+  .tax-product-type #main .page-header .products-archive-type-list,
+  .tax-product-type #main .tax-custom-type-header .products-archive-type-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -864,19 +801,27 @@ a:hover, a:active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .post-type-archive #main .page-header .products-archive-type-list li, .post-type-archive #main .tax-custom-type-header .products-archive-type-list li, .tax-product-type #main .page-header .products-archive-type-list li, .tax-product-type #main .tax-custom-type-header .products-archive-type-list li {
+    .post-type-archive #main .page-header .products-archive-type-list li, .post-type-archive #main .tax-custom-type-header .products-archive-type-list li,
+    .tax-product-type #main .page-header .products-archive-type-list li,
+    .tax-product-type #main .tax-custom-type-header .products-archive-type-list li {
       width: 7%;
       text-align: center;
       font-size: 1.2rem;
       text-transform: uppercase;
       font-weight: normal; }
-      .post-type-archive #main .page-header .products-archive-type-list li a, .post-type-archive #main .tax-custom-type-header .products-archive-type-list li a, .tax-product-type #main .page-header .products-archive-type-list li a, .tax-product-type #main .tax-custom-type-header .products-archive-type-list li a {
+      .post-type-archive #main .page-header .products-archive-type-list li a, .post-type-archive #main .tax-custom-type-header .products-archive-type-list li a,
+      .tax-product-type #main .page-header .products-archive-type-list li a,
+      .tax-product-type #main .tax-custom-type-header .products-archive-type-list li a {
         text-decoration: none;
         color: #248A83; }
-        .post-type-archive #main .page-header .products-archive-type-list li a:hover, .post-type-archive #main .tax-custom-type-header .products-archive-type-list li a:hover, .tax-product-type #main .page-header .products-archive-type-list li a:hover, .tax-product-type #main .tax-custom-type-header .products-archive-type-list li a:hover {
+        .post-type-archive #main .page-header .products-archive-type-list li a:hover, .post-type-archive #main .tax-custom-type-header .products-archive-type-list li a:hover,
+        .tax-product-type #main .page-header .products-archive-type-list li a:hover,
+        .tax-product-type #main .tax-custom-type-header .products-archive-type-list li a:hover {
           color: #2f1339; }
 
-.post-type-archive #main .products-archive-list, .post-type-archive #main .tax-custom-list, .tax-product-type #main .products-archive-list, .tax-product-type #main .tax-custom-list {
+.post-type-archive #main .products-archive-list, .post-type-archive #main .tax-custom-list,
+.tax-product-type #main .products-archive-list,
+.tax-product-type #main .tax-custom-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,17 +829,31 @@ a:hover, a:active {
       flex-wrap: wrap;
   margin: 5vw 10vw;
   list-style-type: none; }
-  .post-type-archive #main .products-archive-list li, .post-type-archive #main .tax-custom-list li, .tax-product-type #main .products-archive-list li, .tax-product-type #main .tax-custom-list li {
+  .post-type-archive #main .products-archive-list li, .post-type-archive #main .tax-custom-list li,
+  .tax-product-type #main .products-archive-list li,
+  .tax-product-type #main .tax-custom-list li {
     -ms-flex-preferred-size: 22%;
         flex-basis: 22%;
     margin: 2vw 1vw; }
-    .post-type-archive #main .products-archive-list li .products-archive-image-wrapper, .post-type-archive #main .products-archive-list li .tax-custom-image-wrapper, .post-type-archive #main .tax-custom-list li .products-archive-image-wrapper, .post-type-archive #main .tax-custom-list li .tax-custom-image-wrapper, .tax-product-type #main .products-archive-list li .products-archive-image-wrapper, .tax-product-type #main .products-archive-list li .tax-custom-image-wrapper, .tax-product-type #main .tax-custom-list li .products-archive-image-wrapper, .tax-product-type #main .tax-custom-list li .tax-custom-image-wrapper {
+    .post-type-archive #main .products-archive-list li .products-archive-image-wrapper, .post-type-archive #main .products-archive-list li .tax-custom-image-wrapper, .post-type-archive #main .tax-custom-list li .products-archive-image-wrapper, .post-type-archive #main .tax-custom-list li .tax-custom-image-wrapper,
+    .tax-product-type #main .products-archive-list li .products-archive-image-wrapper,
+    .tax-product-type #main .products-archive-list li .tax-custom-image-wrapper,
+    .tax-product-type #main .tax-custom-list li .products-archive-image-wrapper,
+    .tax-product-type #main .tax-custom-list li .tax-custom-image-wrapper {
       height: 14vw; }
-      .post-type-archive #main .products-archive-list li .products-archive-image-wrapper img, .post-type-archive #main .products-archive-list li .tax-custom-image-wrapper img, .post-type-archive #main .tax-custom-list li .products-archive-image-wrapper img, .post-type-archive #main .tax-custom-list li .tax-custom-image-wrapper img, .tax-product-type #main .products-archive-list li .products-archive-image-wrapper img, .tax-product-type #main .products-archive-list li .tax-custom-image-wrapper img, .tax-product-type #main .tax-custom-list li .products-archive-image-wrapper img, .tax-product-type #main .tax-custom-list li .tax-custom-image-wrapper img {
+      .post-type-archive #main .products-archive-list li .products-archive-image-wrapper img, .post-type-archive #main .products-archive-list li .tax-custom-image-wrapper img, .post-type-archive #main .tax-custom-list li .products-archive-image-wrapper img, .post-type-archive #main .tax-custom-list li .tax-custom-image-wrapper img,
+      .tax-product-type #main .products-archive-list li .products-archive-image-wrapper img,
+      .tax-product-type #main .products-archive-list li .tax-custom-image-wrapper img,
+      .tax-product-type #main .tax-custom-list li .products-archive-image-wrapper img,
+      .tax-product-type #main .tax-custom-list li .tax-custom-image-wrapper img {
         -o-object-fit: cover;
            object-fit: cover;
         height: 100%; }
-    .post-type-archive #main .products-archive-list li .products-archive-text-wrapper, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper {
+    .post-type-archive #main .products-archive-list li .products-archive-text-wrapper, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper,
+    .tax-product-type #main .products-archive-list li .products-archive-text-wrapper,
+    .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper,
+    .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper,
+    .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper {
       position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -905,16 +864,28 @@ a:hover, a:active {
       border-top: 5px solid #f0e4d1;
       padding: 10px;
       height: 60px; }
-      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:first-child, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:first-child, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:first-child, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:first-child, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:first-child, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:first-child, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:first-child, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:first-child {
+      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:first-child, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:first-child, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:first-child, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:first-child,
+      .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:first-child,
+      .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:first-child,
+      .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:first-child,
+      .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:first-child {
         position: absolute;
         left: 2px;
         z-index: 3;
         background: white; }
-      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:last-child, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:last-child, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:last-child, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:last-child, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:last-child, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:last-child, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:last-child, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:last-child {
+      .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:last-child, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:last-child, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:last-child, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:last-child,
+      .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:last-child,
+      .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:last-child,
+      .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:last-child,
+      .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:last-child {
         position: absolute;
         right: 2px;
         background: white; }
-        .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:last-child::before, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:last-child::before, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:last-child::before, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:last-child::before, .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:last-child::before, .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:last-child::before, .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:last-child::before, .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:last-child::before {
+        .post-type-archive #main .products-archive-list li .products-archive-text-wrapper span:last-child::before, .post-type-archive #main .products-archive-list li .tax-custom-text-wrapper span:last-child::before, .post-type-archive #main .tax-custom-list li .products-archive-text-wrapper span:last-child::before, .post-type-archive #main .tax-custom-list li .tax-custom-text-wrapper span:last-child::before,
+        .tax-product-type #main .products-archive-list li .products-archive-text-wrapper span:last-child::before,
+        .tax-product-type #main .products-archive-list li .tax-custom-text-wrapper span:last-child::before,
+        .tax-product-type #main .tax-custom-list li .products-archive-text-wrapper span:last-child::before,
+        .tax-product-type #main .tax-custom-list li .tax-custom-text-wrapper span:last-child::before {
           content: '...........................'; }
 
 /* Asides */
@@ -1088,94 +1059,6 @@ object {
   .category #secondary aside .day-of-week {
     font-weight: 800; }
 
-.blog #primary, .single-post #primary {
-  padding-top: 0; }
-
-.blog .site-content article, .single-post .site-content article {
-  margin: 50px 0; }
-  .blog .site-content article .entry-header, .single-post .site-content article .entry-header {
-    position: relative;
-    text-transform: uppercase; }
-    .blog .site-content article .entry-header img, .single-post .site-content article .entry-header img {
-      width: 100%; }
-    .blog .site-content article .entry-header .entry-title, .single-post .site-content article .entry-header .entry-title {
-      color: white;
-      font-family: "no", sans-serif;
-      position: absolute;
-      top: 10px;
-      left: 0;
-      max-width: 80%;
-      background: #248A83;
-      padding: 10px; }
-      .blog .site-content article .entry-header .entry-title a, .single-post .site-content article .entry-header .entry-title a {
-        text-decoration: none;
-        font-family: "Novocento", sans-serif;
-        color: white;
-        width: 100%; }
-        .blog .site-content article .entry-header .entry-title a:hover, .single-post .site-content article .entry-header .entry-title a:hover {
-          color: #f0e4d1; }
-    .blog .site-content article .entry-header .entry-meta, .single-post .site-content article .entry-header .entry-meta {
-      position: absolute;
-      bottom: 6px;
-      right: 0;
-      color: white;
-      background: #248A83;
-      padding: 5px; }
-      .blog .site-content article .entry-header .entry-meta a, .single-post .site-content article .entry-header .entry-meta a {
-        color: white;
-        text-decoration: none; }
-  .blog .site-content article .entry-content p, .single-post .site-content article .entry-content p {
-    margin: 20px 0; }
-  .blog .site-content article .entry-content a, .single-post .site-content article .entry-content a {
-    text-decoration: none;
-    font-family: "Novocento", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
-    border: solid black 1px;
-    padding: 10px; }
-    .blog .site-content article .entry-content a:hover, .single-post .site-content article .entry-content a:hover {
-      background: #248A83;
-      color: white;
-      border: none; }
-
-.blog .site-content .entry-footer, .single-post .site-content .entry-footer {
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-family: "Novocento", sans-serif; }
-  .blog .site-content .entry-footer span, .single-post .site-content .entry-footer span {
-    margin: 20px 20px 10px 0; }
-    .blog .site-content .entry-footer span a, .single-post .site-content .entry-footer span a {
-      color: #248A83;
-      text-decoration: none; }
-
-.blog .site-content .entry-summary a, .single-post .site-content .entry-summary a {
-  text-decoration: none;
-  font-family: "Novocento", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: black;
-  border: solid black 1px;
-  padding: 10px;
-  width: 150px; }
-
-.blog .site-content .single-post-social-media, .single-post .site-content .single-post-social-media {
-  margin: 15px 0; }
-  .blog .site-content .single-post-social-media span, .single-post .site-content .single-post-social-media span {
-    padding: 10px 20px;
-    border: 1px solid black;
-    text-transform: uppercase;
-    font-family: "Novocento", sans-serif; }
-    .blog .site-content .single-post-social-media span a, .single-post .site-content .single-post-social-media span a {
-      color: black;
-      text-decoration: none; }
-    .blog .site-content .single-post-social-media span i, .single-post .site-content .single-post-social-media span i {
-      padding: 10px; }
-    .blog .site-content .single-post-social-media span:hover, .single-post .site-content .single-post-social-media span:hover {
-      background: #248A83; }
-      .blog .site-content .single-post-social-media span:hover a, .single-post .site-content .single-post-social-media span:hover a {
-        color: white; }
-
 body {
   font-family: "Merriweather", serif; }
 
@@ -1258,6 +1141,9 @@ body {
     line-height: 1.75;
     padding: 15px 0; }
 
+.post-type-archive-adventure .page-header h1 {
+  padding: 0; }
+
 .post-type-archive-adventure .adventures-archive-list {
   list-style-type: none;
   display: -webkit-box;
@@ -1277,9 +1163,12 @@ body {
     width: 40vw;
     height: 70vh;
     background-size: cover; }
+    .post-type-archive-adventure .adventures-archive-list li div h1 {
+      padding: 10px; }
     .post-type-archive-adventure .adventures-archive-list li div a {
       text-decoration: none;
-      color: white; }
+      color: white;
+      padding: 5px 0; }
       .post-type-archive-adventure .adventures-archive-list li div a:hover {
         color: #f0e4d1; }
     .post-type-archive-adventure .adventures-archive-list li div p {
@@ -1287,10 +1176,222 @@ body {
       border: 2px solid white;
       padding: 10px 20px;
       margin-left: 20px;
-      width: 150px; }
+      width: 150px;
+      text-transform: uppercase;
+      font-family: "Novocento", sans-serif; }
       .post-type-archive-adventure .adventures-archive-list li div p:hover {
         background: #248A83;
         border: none; }
+
+.single-adventure .entry-content .single-post-social-media {
+  margin: 15px 0; }
+  .single-adventure .entry-content .single-post-social-media span {
+    padding: 10px 20px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: "Novocento", sans-serif; }
+    .single-adventure .entry-content .single-post-social-media span a {
+      color: black;
+      text-decoration: none; }
+    .single-adventure .entry-content .single-post-social-media span i {
+      padding: 10px; }
+    .single-adventure .entry-content .single-post-social-media span:hover {
+      background: #248A83; }
+      .single-adventure .entry-content .single-post-social-media span:hover a {
+        color: white; }
+
+.blog #primary,
+.single-post #primary,
+.tag #primary,
+.category #primary {
+  padding-top: 0; }
+
+.blog .site-content article,
+.single-post .site-content article,
+.tag .site-content article,
+.category .site-content article {
+  margin: 50px 0; }
+  .blog .site-content article .entry-header,
+  .single-post .site-content article .entry-header,
+  .tag .site-content article .entry-header,
+  .category .site-content article .entry-header {
+    position: relative;
+    text-transform: uppercase; }
+    .blog .site-content article .entry-header img,
+    .single-post .site-content article .entry-header img,
+    .tag .site-content article .entry-header img,
+    .category .site-content article .entry-header img {
+      width: 100%; }
+    .blog .site-content article .entry-header .entry-title,
+    .single-post .site-content article .entry-header .entry-title,
+    .tag .site-content article .entry-header .entry-title,
+    .category .site-content article .entry-header .entry-title {
+      color: white;
+      font-family: "no", sans-serif;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      max-width: 80%;
+      background: #248A83;
+      padding: 10px; }
+      .blog .site-content article .entry-header .entry-title a,
+      .single-post .site-content article .entry-header .entry-title a,
+      .tag .site-content article .entry-header .entry-title a,
+      .category .site-content article .entry-header .entry-title a {
+        text-decoration: none;
+        font-family: "Novocento", sans-serif;
+        color: white;
+        width: 100%; }
+        .blog .site-content article .entry-header .entry-title a:hover,
+        .single-post .site-content article .entry-header .entry-title a:hover,
+        .tag .site-content article .entry-header .entry-title a:hover,
+        .category .site-content article .entry-header .entry-title a:hover {
+          color: #f0e4d1; }
+    .blog .site-content article .entry-header .entry-meta,
+    .single-post .site-content article .entry-header .entry-meta,
+    .tag .site-content article .entry-header .entry-meta,
+    .category .site-content article .entry-header .entry-meta {
+      position: absolute;
+      bottom: 6px;
+      right: 0;
+      color: white;
+      background: #248A83;
+      padding: 5px; }
+      .blog .site-content article .entry-header .entry-meta a,
+      .single-post .site-content article .entry-header .entry-meta a,
+      .tag .site-content article .entry-header .entry-meta a,
+      .category .site-content article .entry-header .entry-meta a {
+        color: white;
+        text-decoration: none; }
+  .blog .site-content article .entry-content p,
+  .single-post .site-content article .entry-content p,
+  .tag .site-content article .entry-content p,
+  .category .site-content article .entry-content p {
+    margin: 20px 0; }
+  .blog .site-content article .entry-content a,
+  .single-post .site-content article .entry-content a,
+  .tag .site-content article .entry-content a,
+  .category .site-content article .entry-content a {
+    text-decoration: none;
+    font-family: "Novocento", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    border: solid black 1px;
+    padding: 10px; }
+    .blog .site-content article .entry-content a:hover,
+    .single-post .site-content article .entry-content a:hover,
+    .tag .site-content article .entry-content a:hover,
+    .category .site-content article .entry-content a:hover {
+      background: #248A83;
+      color: white;
+      border: none; }
+
+.blog .site-content .entry-footer,
+.single-post .site-content .entry-footer,
+.tag .site-content .entry-footer,
+.category .site-content .entry-footer {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-family: "Novocento", sans-serif; }
+  .blog .site-content .entry-footer span,
+  .single-post .site-content .entry-footer span,
+  .tag .site-content .entry-footer span,
+  .category .site-content .entry-footer span {
+    margin: 20px 20px 10px 0; }
+    .blog .site-content .entry-footer span a,
+    .single-post .site-content .entry-footer span a,
+    .tag .site-content .entry-footer span a,
+    .category .site-content .entry-footer span a {
+      color: #248A83;
+      text-decoration: none; }
+
+.blog .site-content .entry-summary a,
+.single-post .site-content .entry-summary a,
+.tag .site-content .entry-summary a,
+.category .site-content .entry-summary a {
+  text-decoration: none;
+  font-family: "Novocento", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  border: solid black 1px;
+  padding: 10px;
+  width: 150px; }
+
+.blog .site-content .single-post-social-media,
+.single-post .site-content .single-post-social-media,
+.tag .site-content .single-post-social-media,
+.category .site-content .single-post-social-media {
+  margin: 15px 0; }
+  .blog .site-content .single-post-social-media span,
+  .single-post .site-content .single-post-social-media span,
+  .tag .site-content .single-post-social-media span,
+  .category .site-content .single-post-social-media span {
+    padding: 10px 20px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: "Novocento", sans-serif; }
+    .blog .site-content .single-post-social-media span a,
+    .single-post .site-content .single-post-social-media span a,
+    .tag .site-content .single-post-social-media span a,
+    .category .site-content .single-post-social-media span a {
+      color: black;
+      text-decoration: none; }
+    .blog .site-content .single-post-social-media span i,
+    .single-post .site-content .single-post-social-media span i,
+    .tag .site-content .single-post-social-media span i,
+    .category .site-content .single-post-social-media span i {
+      padding: 10px; }
+    .blog .site-content .single-post-social-media span:hover,
+    .single-post .site-content .single-post-social-media span:hover,
+    .tag .site-content .single-post-social-media span:hover,
+    .category .site-content .single-post-social-media span:hover {
+      background: #248A83; }
+      .blog .site-content .single-post-social-media span:hover a,
+      .single-post .site-content .single-post-social-media span:hover a,
+      .tag .site-content .single-post-social-media span:hover a,
+      .category .site-content .single-post-social-media span:hover a {
+        color: white; }
+
+.single-post .single-post-comment label, .single-post .single-post-comment p {
+  text-transform: uppercase;
+  font-family: "Novocento", sans-serif; }
+
+.single-post .single-post-comment h2 {
+  text-transform: uppercase;
+  font-family: "Novocento", sans-serif; }
+
+.single-post .single-post-comment a {
+  color: #248A83;
+  text-decoration: none; }
+
+.single-post .single-post-comment .comment-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  .single-post .single-post-comment .comment-inline label {
+    width: 50%;
+    height: auto; }
+    .single-post .single-post-comment .comment-inline label .red {
+      color: red; }
+
+.single-post .single-post-comment input[type="submit"] {
+  padding: 10px 20px;
+  background: #248A83;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Novocento", sans-serif;
+  text-shadow: none;
+  margin-top: 20px; }
+
+.tag .page-title,
+.category .page-title {
+  text-transform: uppercase;
+  font-family: "Novocento", sans-serif; }
 
 .page-template-default .entry-header h1 {
   text-transform: uppercase;

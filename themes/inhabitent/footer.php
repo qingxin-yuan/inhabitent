@@ -28,12 +28,12 @@
 					</div>
 
 					<div class="footer-image">
-						<a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-text.svg"></a>
+						<a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-text.svg" alt="inhabitent logo"></a>
 					</div>
 
 				</div><!-- .site-info -->
 				<div class="footer-copyright">
-				<p>copyright &copy 2017 inhabitent</p>
+				<p>copyright &copy; 2017 inhabitent</p>
 			</div>
 			</div>
 			

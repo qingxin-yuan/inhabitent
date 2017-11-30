@@ -1,0 +1,7 @@
+.single-adventure{
+  .entry-content{
+    .single-post-social-media{
+      @include social-media-span;
+    }
+  }
+}

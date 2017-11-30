@@ -66,24 +66,24 @@
 
 
 <section class="home-adventures">
-<h1>latest adventures<h1>
-<ul class="adventure-grid">
-	<?php
-		$args = array( 'post_type'=>'adventure');
-		$posts = get_posts( $args ); // returns an array of posts
-	?>
-	<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-		<li>
-			<h2><a href="<?php echo get_permalink();?>" class="adventure-title-link">
-				<?php the_title();?></a></h2>
-			
-			<p><a href="<?php echo get_permalink();?>">read more</a></p>
-			
-		</li>
-	<?php endforeach; wp_reset_postdata(); ?>
-</ul>
+	<h1>latest adventures</h1>
+	<ul class="adventure-grid">
+		<?php
+			$args = array( 'post_type'=>'adventure');
+			$posts = get_posts( $args ); // returns an array of posts
+		?>
+		<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+			<li>
+				<h2><a href="<?php echo get_permalink();?>" class="adventure-title-link">
+					<?php the_title();?></a></h2>
+				
+				<p><a href="<?php echo get_permalink();?>">read more</a></p>
+				
+			</li>
+		<?php endforeach; wp_reset_postdata(); ?>
+	</ul>
 
-<p><a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventure-link">more adventures</a></p>
+	<p><a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>" class="more-adventure-link">more adventures</a></p>
 
 </section>
 

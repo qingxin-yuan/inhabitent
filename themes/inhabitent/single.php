@@ -22,13 +22,15 @@ get_header(); ?>
 				<span><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i>pin</a></span>
 			</div>
 
-
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+				if ( comments_open() || get_comments_number() ) :?>
+					<section class="single-post-comment">
+						<h2>post a comment</h2>
+						<p>Want to join the discussion? Feel free to contribute!</p>
+						<?php echo do_shortcode( '[contact-form-7 id="198" title="comment form"]' );?>
+					</section>
+				<?php endif;?>
 
 		<?php endwhile; // End of the loop. ?>
 

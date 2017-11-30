@@ -1,8 +1,6 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@import 'variables';
-@import 'mixins';
 
 /* Posts and pages */
 
@@ -49,88 +47,88 @@
 		// 	width: 600px;
 		// }
 	}
-	.comments-area{
-		.comments-title{
-			margin: 50px 0;
-			text-transform: uppercase;
-			font-family: $font-uppercase;
-		}
-		ol {
-			border-bottom: none;
-			// list-style-position: inside;
-			list-style-type: none;
-			li{
-				// border-bottom: 0.5px #a1a1a1 solid;
-				a{
-					text-decoration: none;
-					color: $text-green;
-				}
+// 	.comments-area{
+// 		.comments-title{
+// 			margin: 50px 0;
+// 			text-transform: uppercase;
+// 			font-family: $font-uppercase;
+// 		}
+// 		ol {
+// 			border-bottom: none;
+// 			// list-style-position: inside;
+// 			list-style-type: none;
+// 			li{
+// 				// border-bottom: 0.5px #a1a1a1 solid;
+// 				a{
+// 					text-decoration: none;
+// 					color: $text-green;
+// 				}
 				
-			.comment-body{
-				position: relative;
-			}
-			.comment-author-avatar{
-				display: inline;
-				position: absolute;
-				top: 0;
-			}
-			.comment-content{
-				margin-left: 100px;
-			}
-		}
-	}
-	.comment-respond{
-		font-size: 1rem;
-		h3{
-			margin: 20px 0;
-			text-transform: uppercase;
-			font-family: $font-uppercase;
-		}
-		p{
-			margin: 20px 0;
-		}
-		.comment-form-comment,
-		.comment-form-author,
-		.comment-form-email,
-		.comment-form-url{
-			text-transform: uppercase;
-			font-family: $font-uppercase;
-			.required{
-				color: #d99054;
-			}
-		}
-		.comment-form-author{
-			float: left;
-			width: 50%;
-		}
-		input[type="text"]{
-			width: 95%;
-		}
-		.comment-form-email{
-			float: right;
-			width: 50%;
-		}
-		input[type="email"]{
-			width: 100%;
-		}
-		input[type="url"]{
-			width: 100%;
-		}
-		input[type="submit"]{
-			color: white;
-			padding: 10px 30px;
-			background: $text-green;
-			text-shadow: none;
-			text-transform: uppercase;
-			font-family: $font-uppercase;
-			&:hover{
-				box-shadow: none;
-				background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),#248A83;
+// 			.comment-body{
+// 				position: relative;
+// 			}
+// 			.comment-author-avatar{
+// 				display: inline;
+// 				position: absolute;
+// 				top: 0;
+// 			}
+// 			.comment-content{
+// 				margin-left: 100px;
+// 			}
+// 		}
+// 	}
+// 	.comment-respond{
+// 		font-size: 1rem;
+// 		h3{
+// 			margin: 20px 0;
+// 			text-transform: uppercase;
+// 			font-family: $font-uppercase;
+// 		}
+// 		p{
+// 			margin: 20px 0;
+// 		}
+// 		.comment-form-comment,
+// 		.comment-form-author,
+// 		.comment-form-email,
+// 		.comment-form-url{
+// 			text-transform: uppercase;
+// 			font-family: $font-uppercase;
+// 			.required{
+// 				color: #d99054;
+// 			}
+// 		}
+// 		.comment-form-author{
+// 			float: left;
+// 			width: 50%;
+// 		}
+// 		input[type="text"]{
+// 			width: 95%;
+// 		}
+// 		.comment-form-email{
+// 			float: right;
+// 			width: 50%;
+// 		}
+// 		input[type="email"]{
+// 			width: 100%;
+// 		}
+// 		input[type="url"]{
+// 			width: 100%;
+// 		}
+// 		input[type="submit"]{
+// 			color: white;
+// 			padding: 10px 30px;
+// 			background: $text-green;
+// 			text-shadow: none;
+// 			text-transform: uppercase;
+// 			font-family: $font-uppercase;
+// 			&:hover{
+// 				box-shadow: none;
+// 				background: linear-gradient(30deg,rgba(60,60,60,0.3),rgba(60,60,60,0.3)),#248A83;
 				
-			}
-		}
-	}
-}
+// 			}
+// 		}
+// 	}
+// }
 }
 //SINGLE PRODUCT PAGES
 .single-products{
@@ -167,7 +165,9 @@
 
 
 //SHOP PAGE STYLING
-.post-type-archive,.tax-product-type{
+.post-type-archive,
+.tax-product-type
+{
 	#main{
 		.page-header,.tax-custom-type-header{
 			font-family: $font-uppercase;
