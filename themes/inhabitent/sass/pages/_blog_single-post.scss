@@ -17,9 +17,9 @@
         }
         .entry-title{
           color: white;
-          font-family: "no", sans-serif;
+          font-family: $font-uppercase;
           position: absolute;
-          top: 10px;
+          top: 30px;
           left:0;
           max-width: 80%;
           background: #248A83;
@@ -101,6 +101,9 @@
 }
 //single post page comment section styling
 .single-post{
+  .entry-title{
+    // font-family: $font-uppercase;
+  }
   .single-post-comment{
     label,p{
       text-transform: uppercase;

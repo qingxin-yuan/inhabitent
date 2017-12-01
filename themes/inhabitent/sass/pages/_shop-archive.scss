@@ -1,0 +1,75 @@
+//SHOP PAGE STYLING
+.post-type-archive,
+.tax-product-type
+{
+	#main{
+		.page-header,.tax-custom-type-header{
+			font-family: $font-uppercase;
+			padding-bottom: 3vw;
+			text-align: center;
+			border-bottom: $border_grey_dashed;
+			.products-archive-type-list{
+				display: flex;
+				list-style-type: none;
+				justify-content: center;
+				
+				li{
+					width: 7%;
+					text-align: center;
+					font-size: 1.2rem;
+					text-transform: uppercase;
+					font-weight: normal;
+					a{
+						text-decoration: none;
+						color: #248A83;
+						&:hover{
+							color: #2f1339;
+						}
+					}
+				}
+			}
+		}
+		.products-archive-list,.tax-custom-list{
+			display: flex;
+			flex-wrap: wrap;
+			margin:5vw 10vw;
+			list-style-type: none;
+			li{
+				flex-basis: 22%;
+				margin: 2vw 1vw;
+				.products-archive-image-wrapper,.tax-custom-image-wrapper{
+					height: 14vw;
+					img{
+						object-fit: cover;
+						height: 100%;
+					}
+				}
+				.products-archive-text-wrapper,.tax-custom-text-wrapper{
+					position: relative;
+					display: flex;
+					width: 100%;
+					overflow: hidden;
+					border: 1px solid #f0e4d1;
+					border-top: 5px solid #f0e4d1;;
+					padding: 10px;
+					height: 60px;
+					span:first-child{
+						position: absolute;
+						left: 2px;
+						z-index: 3;
+						background: white;
+					}
+					span:last-child{
+						position: absolute;
+						right: 2px;
+						background: white;
+						&::before{
+							content: '...........................';
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}

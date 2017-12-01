@@ -1,8 +1,12 @@
 //ADVENTURE ARCHIVE PAGE
 .post-type-archive-adventure{
-  .page-header h1{
+  .page-header{
+    padding-top: 20px;
+    h1{
     padding: 0;
+    font-weight: 600;
   }
+  } 
   .adventures-archive-list{
     list-style-type: none;
     display: flex;
@@ -17,7 +21,8 @@
 
       background-size: cover;
       h1{
-        padding: 10px;
+        // font-size: 3rem;
+        padding: 30px 20px;
       }
       a{
         text-decoration: none;

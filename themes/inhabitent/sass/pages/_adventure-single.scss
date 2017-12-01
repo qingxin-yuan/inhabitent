@@ -1,5 +1,21 @@
 .single-adventure{
   .entry-content{
+    margin: 70px 300px;
+    h1{
+      text-transform: uppercase;
+      font-family: $font-uppercase;
+      margin: 0;
+    }
+    p{
+      margin: 20px 0;
+      font-family: $font-main;
+      &:nth-child(2){
+      text-transform: uppercase;
+      font-family: $font-uppercase;
+      // margin-bottom: 20px;
+      }
+    }
+    
     .single-post-social-media{
       @include social-media-span;
     }

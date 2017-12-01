@@ -1,0 +1,32 @@
+//SINGLE PRODUCT PAGES
+.single-products{
+	.site-main{
+		display: flex;
+		justify-content: space-between;
+		margin: 20px 10%;
+	}
+	.entry-header{
+		width: 60%;
+		margin: 40px 0;
+
+		
+	}
+	.entry-content{
+		width: 40%;
+		h1{
+			text-transform: uppercase;
+			color: #d99054;
+			font-family: $font-uppercase;
+			margin: 15px 0;
+		}
+		h3{
+			font-family: $font-uppercase;
+			font-weight: normal;
+			font-size: 1.5rem;
+			margin: 10px 0;
+		}
+		.single-post-social-media{
+			@include social-media-span;
+		}
+	}
+}
